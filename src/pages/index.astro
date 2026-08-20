@@ -1,23 +1,15 @@
 ---
 const services = [
-  {
-    title: 'Android Apps',
-    text: 'Simple, practical Android apps designed around real business needs in Cambodia.',
-  },
-  {
-    title: 'Digital Tools',
-    text: 'Lightweight tools that reduce manual work and make everyday operations easier.',
-  },
-  {
-    title: 'Local-first Development',
-    text: 'We listen first, validate the problem, and then build only what is useful.',
-  },
+  ['Android Apps', 'Simple, practical Android apps designed around real business needs in Cambodia.'],
+  ['Digital Tools', 'Lightweight tools that reduce manual work and make everyday operations easier.'],
+  ['Local-first Development', 'We listen first, validate the problem, and then build only what is useful.'],
 ];
 
 const steps = [
-  ['01', 'Listen', 'We start by understanding how the work is done today and where the friction is.'],
-  ['02', 'Validate', 'We confirm that the problem is frequent, costly, or time-consuming enough to solve.'],
-  ['03', 'Build', 'We create a focused solution, test it quickly, and improve it from real feedback.'],
+  ['01', 'Listen', 'We listen carefully and understand the real problem.'],
+  ['02', 'Validate', 'We confirm the need and define what is actually useful.'],
+  ['03', 'Build', 'We build simple, reliable tools and test with real users.'],
+  ['04', 'Improve', 'We improve continuously from feedback and real usage.'],
 ];
 ---
 
@@ -26,376 +18,160 @@ const steps = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content="Kroma Digital builds practical Android apps and digital tools for Cambodian businesses."
-    />
-    <meta name="theme-color" content="#0c2f2b" />
+    <meta name="description" content="Kroma Digital builds practical Android apps and digital tools for Cambodian businesses." />
+    <meta name="theme-color" content="#061a31" />
     <title>Kroma Digital | Practical Digital Tools for Cambodia</title>
     <style>
       :root {
-        --bg: #f7f4ec;
-        --surface: #fffdf8;
-        --ink: #15302d;
-        --muted: #64726f;
-        --brand: #0c5b52;
-        --brand-dark: #083f39;
-        --accent: #d7a84a;
-        --line: #dedbd1;
-        --shadow: 0 20px 45px rgba(17, 52, 48, 0.08);
+        --navy:#061a31;
+        --navy-2:#0c345f;
+        --blue:#123f70;
+        --red:#f04438;
+        --gold:#ffb21a;
+        --ink:#0c2440;
+        --muted:#5f7186;
+        --line:#dfe6ee;
+        --soft:#f5f8fc;
+        --white:#fff;
       }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+      a{text-decoration:none;color:inherit}
+      .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
 
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-      body {
-        margin: 0;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: var(--bg);
-        color: var(--ink);
-        line-height: 1.6;
-      }
+      header{position:sticky;top:0;z-index:50;background:rgba(5,24,45,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+      .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;color:#fff}
+      .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.05rem}
+      .brand img{width:42px;height:42px;object-fit:contain}
+      nav ul{display:flex;align-items:center;gap:28px;list-style:none;margin:0;padding:0;font-size:.9rem;font-weight:700}
+      nav a{color:rgba(255,255,255,.86)}
+      nav a:hover{color:#fff}
+      .nav-cta{padding:10px 16px;border-radius:999px;background:#1877f2;color:#fff!important}
 
-      a { color: inherit; text-decoration: none; }
-      .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+      .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#041426 0%,#071f3b 58%,#0a2e54 100%);color:#fff;padding:92px 0 88px;min-height:620px;display:flex;align-items:center}
+      .hero::before,.hero::after{content:"";position:absolute;pointer-events:none}
+      .hero::before{width:760px;height:120px;background:linear-gradient(90deg,var(--blue),var(--navy-2));right:-160px;top:110px;transform:rotate(45deg);border-radius:20px}
+      .hero::after{width:580px;height:112px;background:linear-gradient(90deg,var(--red),#ef312d);right:-70px;bottom:72px;transform:rotate(-46deg);border-radius:22px}
+      .gold-bar{position:absolute;right:-55px;top:52px;width:300px;height:92px;background:linear-gradient(90deg,#ffb21a,#ffc74a);transform:rotate(-45deg);border-radius:14px}
+      .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:320px 1fr;gap:60px;align-items:center}
+      .hero-logo{display:flex;justify-content:center}
+      .hero-logo img{width:min(280px,78vw);height:auto;filter:drop-shadow(0 22px 35px rgba(0,0,0,.32))}
+      .eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.09em;font-size:.78rem;font-weight:800;color:#6fb0ff}
+      .eyebrow::before{content:"";width:30px;height:2px;background:linear-gradient(90deg,var(--red),var(--gold))}
+      h1{font-size:clamp(3.2rem,7vw,5.7rem);line-height:.98;letter-spacing:-.055em;margin:12px 0 20px}
+      .hero-lead{font-size:clamp(1.25rem,2vw,1.8rem);line-height:1.25;font-weight:700;max-width:680px;margin:0 0 18px}
+      .hero-copy{color:rgba(255,255,255,.72);max-width:620px;font-size:1.03rem}
+      .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+      .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 21px;border-radius:999px;font-weight:800;font-size:.92rem;border:1px solid transparent;transition:.18s ease}
+      .btn.primary{background:#1877f2;color:#fff;box-shadow:0 12px 26px rgba(24,119,242,.28)}
+      .btn.primary:hover{transform:translateY(-1px);background:#1268d7}
+      .btn.secondary{border-color:rgba(255,255,255,.42);color:#fff;background:rgba(255,255,255,.03)}
+      .btn.secondary:hover{background:rgba(255,255,255,.08)}
 
-      header {
-        position: sticky;
-        top: 0;
-        z-index: 20;
-        background: rgba(247, 244, 236, 0.92);
-        backdrop-filter: blur(14px);
-        border-bottom: 1px solid rgba(222, 219, 209, 0.8);
-      }
+      section{padding:78px 0}
+      .section-head{display:grid;grid-template-columns:.82fr 1.18fr;gap:42px;align-items:end;margin-bottom:34px}
+      .section-head h2{font-size:clamp(2.15rem,4vw,3.5rem);line-height:1.04;letter-spacing:-.04em;margin:10px 0 0}
+      .section-head p{color:var(--muted);margin:0;max-width:620px}
+      .light{background:#fff}
+      .soft{background:var(--soft)}
+      .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+      .card{padding:28px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 12px 34px rgba(14,43,72,.06)}
+      .icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#edf5ff;color:#0c5fc7;font-weight:900;margin-bottom:18px}
+      .card h3{margin:0 0 9px;font-size:1.2rem}
+      .card p{margin:0;color:var(--muted)}
 
-      .nav {
-        min-height: 72px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-      }
+      .process{background:linear-gradient(180deg,#eef6ff,#f8fbff)}
+      .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+      .step{position:relative;padding:26px 22px;background:rgba(255,255,255,.74);border:1px solid #dbe7f4;border-radius:18px}
+      .num{font-weight:900;color:#0b67ce;font-size:.8rem;letter-spacing:.06em}
+      .step h3{margin:10px 0 9px;font-size:1.15rem}
+      .step p{margin:0;color:var(--muted);font-size:.94rem}
 
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        font-weight: 800;
-        letter-spacing: -0.02em;
-      }
+      .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+      .project{display:grid;grid-template-columns:92px 1fr;gap:20px;align-items:center;padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 12px 34px rgba(14,43,72,.06)}
+      .project-icon{width:92px;height:92px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(145deg,#0c2848,#123f70);color:#fff;font-size:2rem;font-weight:900}
+      .project h3{margin:0 0 8px;font-size:1.35rem}
+      .project p{margin:0 0 12px;color:var(--muted)}
+      .tag{display:inline-block;padding:5px 9px;border-radius:999px;background:#e8f2ff;color:#1268d7;font-size:.76rem;font-weight:800}
 
-      .mark {
-        width: 38px;
-        height: 38px;
-        border-radius: 12px;
-        background: linear-gradient(135deg, var(--brand), #169b87);
-        position: relative;
-        box-shadow: inset 0 0 0 1px rgba(255,255,255,.25);
-      }
+      .contact{position:relative;overflow:hidden;background:linear-gradient(135deg,#081d36,#0a2f56);color:#fff;padding:52px 0}
+      .contact::after{content:"";position:absolute;right:-90px;bottom:-80px;width:420px;height:84px;background:linear-gradient(90deg,var(--red),var(--navy-2));transform:rotate(45deg);border-radius:18px}
+      .contact-row{position:relative;z-index:2;display:flex;justify-content:space-between;gap:28px;align-items:center}
+      .contact h2{margin:0 0 7px;font-size:clamp(2rem,4vw,3rem);line-height:1.05}
+      .contact p{margin:0;color:rgba(255,255,255,.68)}
 
-      .mark::after {
-        content: '';
-        position: absolute;
-        inset: 9px;
-        border: 3px solid rgba(255,255,255,.92);
-        border-top-color: transparent;
-        border-radius: 50%;
-        transform: rotate(28deg);
-      }
+      footer{background:#05172b;color:rgba(255,255,255,.72);padding:46px 0 26px}
+      .footer-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:38px}
+      .footer-brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;font-size:1.05rem;margin-bottom:12px}
+      .footer-brand img{width:42px;height:42px}
+      footer h4{color:#fff;margin:0 0 12px;font-size:.92rem}
+      footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:.9rem}
+      .copyright{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem;text-align:center}
 
-      nav ul {
-        display: flex;
-        align-items: center;
-        gap: 26px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        font-size: 0.95rem;
+      @media(max-width:900px){
+        nav ul li:not(:last-child){display:none}
+        .hero{padding:64px 0 70px;min-height:auto}
+        .hero-grid{grid-template-columns:1fr;gap:28px;text-align:left}
+        .hero-logo{justify-content:flex-start}
+        .hero-logo img{width:180px}
+        .section-head{grid-template-columns:1fr;gap:14px}
+        .cards,.steps,.projects-grid,.footer-grid{grid-template-columns:1fr 1fr}
       }
-
-      nav a:hover { color: var(--brand); }
-
-      .hero {
-        padding: 92px 0 72px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .hero::before {
-        content: '';
-        position: absolute;
-        width: 420px;
-        height: 420px;
-        border-radius: 50%;
-        right: -120px;
-        top: -120px;
-        background: radial-gradient(circle, rgba(215,168,74,.22), rgba(215,168,74,0));
-      }
-
-      .hero-grid {
-        display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 56px;
-        align-items: center;
-      }
-
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 9px;
-        color: var(--brand);
-        font-weight: 700;
-        font-size: .9rem;
-        letter-spacing: .05em;
-        text-transform: uppercase;
-      }
-
-      .eyebrow::before {
-        content: '';
-        width: 28px;
-        height: 2px;
-        background: var(--accent);
-      }
-
-      h1 {
-        font-size: clamp(2.8rem, 6vw, 5.6rem);
-        line-height: .98;
-        margin: 20px 0 24px;
-        letter-spacing: -0.055em;
-        max-width: 820px;
-      }
-
-      .hero p {
-        font-size: 1.15rem;
-        color: var(--muted);
-        max-width: 650px;
-      }
-
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px;
-        margin-top: 32px;
-      }
-
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 48px;
-        padding: 0 22px;
-        border-radius: 14px;
-        font-weight: 700;
-        border: 1px solid var(--brand);
-      }
-
-      .btn.primary { background: var(--brand); color: white; }
-      .btn.primary:hover { background: var(--brand-dark); }
-      .btn.secondary { background: transparent; color: var(--brand); }
-      .btn.secondary:hover { background: rgba(12,91,82,.06); }
-
-      .hero-card {
-        background: var(--surface);
-        border: 1px solid var(--line);
-        border-radius: 28px;
-        padding: 30px;
-        box-shadow: var(--shadow);
-      }
-
-      .hero-card .label {
-        font-size: .78rem;
-        color: var(--muted);
-        text-transform: uppercase;
-        letter-spacing: .08em;
-        font-weight: 700;
-      }
-
-      .hero-card h2 { margin: 8px 0 20px; font-size: 1.65rem; line-height: 1.25; }
-      .metric {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 16px;
-        padding: 16px 0;
-        border-top: 1px solid var(--line);
-      }
-      .metric span:last-child { font-weight: 800; color: var(--brand); }
-
-      section { padding: 78px 0; }
-      .section-head { max-width: 680px; margin-bottom: 34px; }
-      .section-head h2 {
-        font-size: clamp(2rem, 4vw, 3.2rem);
-        line-height: 1.05;
-        letter-spacing: -0.035em;
-        margin: 10px 0 16px;
-      }
-      .section-head p { color: var(--muted); margin: 0; }
-
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-      }
-
-      .card {
-        background: var(--surface);
-        border: 1px solid var(--line);
-        border-radius: 22px;
-        padding: 26px;
-      }
-
-      .card h3 { margin: 0 0 10px; font-size: 1.25rem; }
-      .card p { margin: 0; color: var(--muted); }
-
-      .process {
-        background: var(--brand-dark);
-        color: white;
-      }
-      .process .section-head p { color: rgba(255,255,255,.68); }
-      .steps {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-      }
-      .step {
-        border: 1px solid rgba(255,255,255,.16);
-        border-radius: 22px;
-        padding: 26px;
-        background: rgba(255,255,255,.045);
-      }
-      .step .num { color: #e2bd6a; font-weight: 800; font-size: .85rem; }
-      .step h3 { font-size: 1.4rem; margin: 12px 0 10px; }
-      .step p { color: rgba(255,255,255,.7); margin: 0; }
-
-      .projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-      }
-      .project {
-        min-height: 240px;
-        border-radius: 24px;
-        border: 1px solid var(--line);
-        padding: 28px;
-        background: var(--surface);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      .tag {
-        display: inline-block;
-        width: fit-content;
-        padding: 6px 10px;
-        border-radius: 999px;
-        font-size: .78rem;
-        font-weight: 700;
-        background: rgba(12,91,82,.08);
-        color: var(--brand);
-      }
-      .project h3 { font-size: 1.6rem; margin: 18px 0 10px; }
-      .project p { color: var(--muted); max-width: 520px; }
-
-      .cta {
-        background: linear-gradient(135deg, #efe6ce, #f7f4ec);
-      }
-      .cta-box {
-        border: 1px solid #d8ceb7;
-        border-radius: 28px;
-        padding: 48px;
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 28px;
-        align-items: center;
-      }
-      .cta-box h2 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.06; }
-      .cta-box p { margin: 0; color: var(--muted); }
-
-      footer {
-        padding: 34px 0 46px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-size: .92rem;
-      }
-      .footer-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-
-      @media (max-width: 820px) {
-        nav ul { display: none; }
-        .hero { padding-top: 58px; }
-        .hero-grid,
-        .cards,
-        .steps,
-        .projects,
-        .cta-box {
-          grid-template-columns: 1fr;
-        }
-        .hero-grid { gap: 32px; }
-        .cta-box { padding: 30px; }
+      @media(max-width:640px){
+        .wrap{width:min(100% - 28px,1180px)}
+        .brand span{font-size:.95rem}
+        .nav-cta{padding:9px 12px;font-size:.8rem}
+        .hero::before{right:-390px;top:80px}
+        .hero::after{right:-320px;bottom:40px}
+        .gold-bar{right:-150px}
+        h1{font-size:3.1rem}
+        .cards,.steps,.projects-grid,.footer-grid{grid-template-columns:1fr}
+        .project{grid-template-columns:72px 1fr}
+        .project-icon{width:72px;height:72px}
+        .contact-row{align-items:flex-start;flex-direction:column}
       }
     </style>
   </head>
-
   <body>
     <header>
       <div class="wrap nav">
-        <a class="brand" href="#top" aria-label="Kroma Digital home">
-          <span class="mark" aria-hidden="true"></span>
-          <span>Kroma Digital</span>
-        </a>
-        <nav aria-label="Primary navigation">
-          <ul>
-            <li><a href="#services">What we do</a></li>
-            <li><a href="#process">How we work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <a class="brand" href="#top"><img src="/kroma-logo.webp" alt="Kroma Digital logo" /><span>Kroma Digital</span></a>
+        <nav aria-label="Primary navigation"><ul>
+          <li><a href="#services">What we do</a></li>
+          <li><a href="#process">How we work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a class="nav-cta" href="https://www.facebook.com/kromadigitalapps" target="_blank" rel="noreferrer">Facebook</a></li>
+        </ul></nav>
       </div>
     </header>
 
     <main id="top">
       <section class="hero">
+        <span class="gold-bar" aria-hidden="true"></span>
         <div class="wrap hero-grid">
+          <div class="hero-logo"><img src="/kroma-logo.webp" alt="Kroma Digital" /></div>
           <div>
-            <span class="eyebrow">Built for real work in Cambodia</span>
-            <h1>Simple digital tools that solve practical problems.</h1>
-            <p>
-              Kroma Digital creates Android apps and lightweight digital tools for Cambodian businesses.
-              We start with the problem, validate the need, and build only what is useful.
-            </p>
+            <span class="eyebrow">Built for Cambodian businesses</span>
+            <h1>Kroma Digital</h1>
+            <p class="hero-lead">Simple Android apps and digital tools for Cambodian businesses.</p>
+            <p class="hero-copy">We build practical, lightweight software that solves real problems. Built for local needs. Focused on what is useful.</p>
             <div class="actions">
-              <a class="btn primary" href="#contact">Tell us your problem</a>
+              <a class="btn primary" href="https://www.facebook.com/kromadigitalapps" target="_blank" rel="noreferrer">Message us on Facebook</a>
               <a class="btn secondary" href="#projects">See what we're building</a>
             </div>
           </div>
-
-          <aside class="hero-card" aria-label="Kroma Digital approach">
-            <span class="label">Our development principle</span>
-            <h2>Listen first. Build second.</h2>
-            <div class="metric"><span>Focus</span><span>Useful</span></div>
-            <div class="metric"><span>Approach</span><span>Local-first</span></div>
-            <div class="metric"><span>Platform</span><span>Android + Web</span></div>
-            <div class="metric"><span>Market</span><span>Cambodia</span></div>
-          </aside>
         </div>
       </section>
 
-      <section id="services">
+      <section class="light" id="services">
         <div class="wrap">
           <div class="section-head">
-            <span class="eyebrow">What we do</span>
-            <h2>Focused tools for small businesses and everyday operations.</h2>
+            <div><span class="eyebrow">What we do</span><h2>Focused tools for small businesses and everyday operations.</h2></div>
             <p>We prefer simple products with a clear purpose over complex software that people do not need.</p>
           </div>
           <div class="cards">
-            {services.map((service) => (
-              <article class="card">
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
-              </article>
-            ))}
+            {services.map(([title,text],i)=>(<article class="card"><div class="icon">{['▣','⌁','◎'][i]}</div><h3>{title}</h3><p>{text}</p></article>))}
           </div>
         </div>
       </section>
@@ -403,66 +179,42 @@ const steps = [
       <section class="process" id="process">
         <div class="wrap">
           <div class="section-head">
-            <span class="eyebrow">How we work</span>
-            <h2>We do not begin by asking what app you want.</h2>
-            <p>We begin by understanding the workflow, the problem, and the current workaround.</p>
+            <div><span class="eyebrow">How we work</span><h2>Listen first. Build second.</h2></div>
+            <p>We start with the workflow and the problem, not with a predetermined app idea.</p>
           </div>
-          <div class="steps">
-            {steps.map(([num, title, text]) => (
-              <article class="step">
-                <span class="num">{num}</span>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </article>
-            ))}
-          </div>
+          <div class="steps">{steps.map(([num,title,text])=>(<article class="step"><span class="num">{num}</span><h3>{title}</h3><p>{text}</p></article>))}</div>
         </div>
       </section>
 
-      <section id="projects">
+      <section class="soft" id="projects">
         <div class="wrap">
           <div class="section-head">
-            <span class="eyebrow">Projects</span>
-            <h2>Products currently being explored and developed.</h2>
-            <p>Our portfolio will grow from small, practical applications that can be tested with real users quickly.</p>
+            <div><span class="eyebrow">Our projects</span><h2>Apps and tools we are building.</h2></div>
+            <p>Our portfolio starts with focused products that can be tested with real users quickly.</p>
           </div>
-          <div class="projects">
-            <article class="project">
-              <div>
-                <span class="tag">In planning</span>
-                <h3>Khmer Expense Manager</h3>
-                <p>Simple income and expense tracking for Cambodia, with support for both USD and KHR.</p>
-              </div>
-            </article>
-            <article class="project">
-              <div>
-                <span class="tag">In planning</span>
-                <h3>Khmer Seller Book</h3>
-                <p>A lightweight sales, profit, payment and delivery record tool for Facebook and TikTok sellers.</p>
-              </div>
-            </article>
+          <div class="projects-grid">
+            <article class="project"><div class="project-icon">$</div><div><h3>Khmer Expense Manager</h3><p>Track income and expenses in USD and KHR for everyday personal and small-business use.</p><span class="tag">In planning</span></div></article>
+            <article class="project"><div class="project-icon">≡</div><div><h3>Khmer Seller Book</h3><p>Manage sales, profit, payments and deliveries for Facebook and TikTok sellers.</p><span class="tag">In planning</span></div></article>
           </div>
         </div>
       </section>
 
-      <section class="cta" id="contact">
-        <div class="wrap">
-          <div class="cta-box">
-            <div>
-              <h2>What part of your work is still harder than it should be?</h2>
-              <p>Tell us about the task, process, or problem. We are interested in real operational pain points.</p>
-            </div>
-            <a class="btn primary" href="https://www.facebook.com/kromadigitalapps" target="_blank" rel="noreferrer">Contact on Facebook</a>
-          </div>
+      <section class="contact" id="contact">
+        <div class="wrap contact-row">
+          <div><h2>Have a problem to solve?</h2><p>Tell us what part of your work is still harder than it should be.</p></div>
+          <a class="btn primary" href="https://www.facebook.com/kromadigitalapps" target="_blank" rel="noreferrer">Message us on Facebook</a>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="wrap footer-row">
-        <strong>Kroma Digital</strong>
-        <span>Practical Android apps and digital tools for Cambodia.</span>
-        <span>© 2026 Kroma Digital</span>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div><div class="footer-brand"><img src="/kroma-logo.webp" alt="" /><span>Kroma Digital</span></div><div>Simple Android apps and digital tools for Cambodian businesses.</div></div>
+          <div><h4>Navigation</h4><ul><li><a href="#services">What we do</a></li><li><a href="#process">How we work</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div>
+          <div><h4>Connect</h4><ul><li><a href="https://www.facebook.com/kromadigitalapps" target="_blank" rel="noreferrer">Facebook / Messenger</a></li><li>Privacy Policy — coming soon</li><li>Terms — coming soon</li></ul></div>
+        </div>
+        <div class="copyright">© 2026 Kroma Digital. All rights reserved.</div>
       </div>
     </footer>
   </body>
