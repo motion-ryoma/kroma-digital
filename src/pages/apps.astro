@@ -5,6 +5,7 @@ const educationApps = [
   { name:'MathLoop', description:'Short daily math practice for children, including missing numbers, number bonds, addition and subtraction.', image:'/apps/mathloop.webp', play:'https://play.google.com/store/apps/details?id=com.hodaka.mathloopapp', privacy:'/privacy/mathloop/' },
   { name:'My Future Jobs', description:'A career exploration app that helps young learners discover occupations, compare jobs and think about their future.', image:'/apps/my-future-jobs.webp', play:null, privacy:'/privacy/my-future-jobs/' },
   { name:'Khmer Work English', description:'Practical workplace English for Khmer speakers with job-specific phrases, audio, quizzes and progress practice.', image:'/apps/khmer-work-english.webp', play:null, privacy:'/privacy/khmer-work-english/' },
+  { name:'Study Timer', description:'A simple study timer designed to help learners focus, manage study sessions and build consistent study habits.', image:'/apps/study-timer.webp', play:null, privacy:null },
   { name:'Micro Expression Trainer', description:'Observation training using brief facial-expression changes to practice recognizing emotions and micro-expressions.', image:null, play:null, privacy:'/privacy/micro-expression-trainer/' },
 ];
 
@@ -46,7 +47,7 @@ const businessApps = [
               <p class="description">{app.description}</p>
               <div class="app-actions">
                 {app.play ? <a class="play-btn" href={app.play} target="_blank" rel="noreferrer">Google Play</a> : null}
-                <a class="privacy-link" href={app.privacy}>Privacy Policy</a>
+                {app.privacy ? <a class="privacy-link" href={app.privacy}>Privacy Policy</a> : null}
               </div>
             </article>
           ))}
@@ -69,7 +70,7 @@ const businessApps = [
               <p class="description">{app.description}</p>
               <div class="app-actions">
                 <a class="play-btn" href={app.play} target="_blank" rel="noreferrer">Google Play</a>
-                <a class="privacy-link" href={app.privacy}>Privacy Policy</a>
+                {app.privacy ? <a class="privacy-link" href={app.privacy}>Privacy Policy</a> : null}
               </div>
             </article>
           ))}
