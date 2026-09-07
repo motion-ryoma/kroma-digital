@@ -2,29 +2,373 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 
 const businessApps = [
-  { name:'Shop Ledger KH', status:'Closed testing', description:'Simple sales, expense, profit and business record management for small businesses in Cambodia.', play:'https://play.google.com/store/apps/details?id=com.kromadigital.shopledgerkh', privacy:'/privacy/shop-ledger-kh/' },
-  { name:'Receipt Maker KH', status:'Closed testing', description:'Create and manage simple receipts for everyday business use, with export and sharing workflows.', play:'https://play.google.com/store/apps/details?id=com.kromadigital.receiptmakerkh', privacy:'/privacy/receipt-maker-kh/' },
-  { name:'Booking Simple KH', status:'Closed testing', description:'Simple booking, customer and appointment management for salons, massage, repair, tutors and other services.', play:'https://play.google.com/store/apps/details?id=com.kromadigital.bookingsimplekh', privacy:'/privacy/booking-simple-kh/' },
-  { name:'Seller Order KH', status:'Closed testing', description:'Order, customer, delivery and status management for Facebook and TikTok sellers.', play:'https://play.google.com/store/apps/details?id=com.kromadigital.sellerorderkh', privacy:'/privacy/seller-order-kh/' },
+  {
+    name: 'Shop Ledger KH',
+    description:
+      'Simple sales, expense, profit and business record management for small businesses in Cambodia.',
+    image: '/apps/shop-ledger-kh.webp',
+    play: 'https://play.google.com/store/apps/details?id=com.kromadigital.shopledgerkh',
+    privacy: '/privacy/shop-ledger-kh/',
+  },
+  {
+    name: 'Receipt Maker KH',
+    description:
+      'Create and manage simple receipts for everyday business use, with export and sharing workflows.',
+    image: '/apps/receipt-maker-kh.webp',
+    play: 'https://play.google.com/store/apps/details?id=com.kromadigital.receiptmakerkh',
+    privacy: '/privacy/receipt-maker-kh/',
+  },
+  {
+    name: 'Booking Simple KH',
+    description:
+      'Simple booking, customer and appointment management for salons, massage, repair, tutors and other services.',
+    image: '/apps/booking-simple-kh.webp',
+    play: 'https://play.google.com/store/apps/details?id=com.kromadigital.bookingsimplekh',
+    privacy: '/privacy/booking-simple-kh/',
+  },
+  {
+    name: 'Seller Order KH',
+    description:
+      'Order, customer, delivery and status management for Facebook and TikTok sellers.',
+    image: '/apps/seller-order-kh.webp',
+    play: 'https://play.google.com/store/apps/details?id=com.kromadigital.sellerorderkh',
+    privacy: '/privacy/seller-order-kh/',
+  },
 ];
 
 const educationApps = [
-  { name:'MathLoop', status:'Available', description:'Short daily math practice for children, including missing numbers, number bonds, addition and subtraction.', play:'https://play.google.com/store/apps/details?id=com.hodaka.mathloopapp', privacy:'/privacy/mathloop/' },
-  { name:'My Future Jobs', status:'In development', description:'A career exploration app that helps young learners discover occupations, compare jobs and think about their future.', play:null, privacy:'/privacy/my-future-jobs/' },
-  { name:'Micro Expression Trainer', status:'In development', description:'Observation training using brief facial-expression changes to practice recognizing emotions and micro-expressions.', play:null, privacy:'/privacy/micro-expression-trainer/' },
-  { name:'Khmer Work English', status:'Planned', description:'Practical workplace English for Khmer speakers with job-specific phrases, audio, quizzes and progress practice.', play:null, privacy:'/privacy/khmer-work-english/' },
+  {
+    name: 'MathLoop',
+    description:
+      'Short daily math practice for children, including missing numbers, number bonds, addition and subtraction.',
+    image: '/apps/mathloop.webp',
+    play: 'https://play.google.com/store/apps/details?id=com.hodaka.mathloopapp',
+    privacy: '/privacy/mathloop/',
+  },
+  {
+    name: 'My Future Jobs',
+    description:
+      'A career exploration app that helps young learners discover occupations, compare jobs and think about their future.',
+    image: '/apps/my-future-jobs.webp',
+    play: null,
+    privacy: '/privacy/my-future-jobs/',
+  },
+  {
+    name: 'Micro Expression Trainer',
+    description:
+      'Observation training using brief facial-expression changes to practice recognizing emotions and micro-expressions.',
+    image: null,
+    play: null,
+    privacy: '/privacy/micro-expression-trainer/',
+  },
+  {
+    name: 'Khmer Work English',
+    description:
+      'Practical workplace English for Khmer speakers with job-specific phrases, audio, quizzes and progress practice.',
+    image: '/apps/khmer-work-english.webp',
+    play: null,
+    privacy: '/privacy/khmer-work-english/',
+  },
 ];
 ---
-<SiteLayout title="Apps" description="Business and education Android apps developed by Kroma Digital.">
-<section class="page-hero"><div class="wrap"><span class="eyebrow">Kroma Digital Apps</span><h1>Practical apps for work and learning.</h1><p>Our Android apps are now presented together under Kroma Digital, with focused products for Cambodian businesses and education.</p></div></section>
-<section class="content"><div class="wrap">
-  <div class="prose"><h2>For Business</h2><p>Lightweight tools designed to make everyday business operations simpler.</p></div>
-  <div class="grid app-grid">{businessApps.map(app => <article class="card"><span class="tag">{app.status}</span><h3>{app.name}</h3><p>{app.description}</p><div class="app-actions"><a class="btn" href={app.play} target="_blank" rel="noreferrer">Google Play</a><a class="text-link" href={app.privacy}>Privacy Policy</a></div></article>)}</div>
 
-  <div class="prose category"><h2>For Education</h2><p>Learning and training apps built around focused practice and exploration.</p></div>
-  <div class="grid app-grid">{educationApps.map(app => <article class="card"><span class="tag">{app.status}</span><h3>{app.name}</h3><p>{app.description}</p><div class="app-actions">{app.play ? <a class="btn" href={app.play} target="_blank" rel="noreferrer">Google Play</a> : <span class="coming">Google Play link coming when published</span>}<a class="text-link" href={app.privacy}>Privacy Policy</a></div></article>)}</div>
-</div></section>
-<style>
-  .category{margin-top:64px}.app-grid{margin-top:22px}.card h3{font-size:1.35rem;margin:14px 0 8px}.app-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-top:20px}.text-link{font-weight:800;color:#1268d7}.coming{font-size:.86rem;color:#718399;font-weight:700}
-</style>
+<SiteLayout
+  title="Apps"
+  description="Business and education Android apps developed by Kroma Digital."
+>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Kroma Digital Apps</span>
+      <h1>Practical apps for work and learning.</h1>
+      <p>
+        Android apps designed for everyday business, learning and practical
+        use in Cambodia.
+      </p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="wrap">
+
+      <div class="category-heading">
+        <span class="category-label">Business</span>
+        <h2>For Business</h2>
+        <p>
+          Simple tools for sales, receipts, bookings, customers and everyday
+          business operations.
+        </p>
+      </div>
+
+      <div class="app-grid">
+        {
+          businessApps.map((app) => (
+            <article class="app-card">
+              <div class="app-top">
+                <img
+                  src={app.image}
+                  alt={`${app.name} app icon`}
+                  class="app-icon"
+                  loading="lazy"
+                />
+
+                <div class="app-title">
+                  
+                  <h3>{app.name}</h3>
+                </div>
+              </div>
+
+              <p class="description">{app.description}</p>
+
+              <div class="app-actions">
+                <a
+                  class="play-btn"
+                  href={app.play}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Google Play
+                </a>
+
+                <a class="privacy-link" href={app.privacy}>
+                  Privacy Policy
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+
+      <div class="category-heading education-heading">
+        <span class="category-label">Education</span>
+        <h2>For Education</h2>
+        <p>
+          Focused learning and training apps for children, students and
+          lifelong learners.
+        </p>
+      </div>
+
+      <div class="app-grid">
+        {
+          educationApps.map((app) => (
+            <article class="app-card">
+              <div class="app-top">
+                {
+                  app.image ? (
+                    <img
+                      src={app.image}
+                      alt={`${app.name} app icon`}
+                      class="app-icon"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div class="app-icon placeholder">
+                      <span>MET</span>
+                    </div>
+                  )
+                }
+
+                <div class="app-title">
+                  
+                  <h3>{app.name}</h3>
+                </div>
+              </div>
+
+              <p class="description">{app.description}</p>
+
+              <div class="app-actions">
+                {
+                  app.play ? (
+                    <a
+                      class="play-btn"
+                      href={app.play}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Google Play
+                    </a>
+                  ) : (
+                    <span class="coming">
+                      Google Play link coming when published
+                    </span>
+                  )
+                }
+
+                <a class="privacy-link" href={app.privacy}>
+                  Privacy Policy
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    .category-heading {
+      max-width: 720px;
+      margin-bottom: 24px;
+    }
+
+    .education-heading {
+      margin-top: 72px;
+    }
+
+    .category-heading h2 {
+      margin: 8px 0 8px;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+    }
+
+    .category-heading p {
+      margin: 0;
+      color: #718399;
+      line-height: 1.7;
+    }
+
+    .category-label {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #1268d7;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .app-card {
+      padding: 24px;
+      border: 1px solid rgba(18, 104, 215, 0.14);
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(18, 42, 72, 0.06);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .app-top {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .app-icon {
+      width: 112px;
+      height: 112px;
+      flex: 0 0 112px;
+      border-radius: 24px;
+      object-fit: cover;
+      display: block;
+      box-shadow: 0 8px 24px rgba(17, 50, 84, 0.14);
+    }
+
+    .placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        linear-gradient(135deg, #0f2850, #1268d7);
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 900;
+    }
+
+    .app-title {
+      min-width: 0;
+    }
+
+    .app-title h3 {
+      margin: 10px 0 0;
+      font-size: 1.4rem;
+      line-height: 1.25;
+    }
+
+    .description {
+      margin: 22px 0 0;
+      color: #52677f;
+      line-height: 1.7;
+      flex-grow: 1;
+    }
+
+    .app-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .play-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 18px;
+      border-radius: 10px;
+      background: #102a4c;
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+      transition:
+        transform 0.15s ease,
+        opacity 0.15s ease;
+    }
+
+    .play-btn:hover {
+      transform: translateY(-1px);
+      opacity: 0.92;
+    }
+
+    .privacy-link {
+      color: #1268d7;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .privacy-link:hover {
+      text-decoration: underline;
+    }
+
+    .coming {
+      font-size: 0.84rem;
+      line-height: 1.4;
+      color: #718399;
+      font-weight: 700;
+    }
+
+    @media (max-width: 760px) {
+      .app-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .app-card {
+        padding: 20px;
+      }
+
+      .app-icon {
+        width: 88px;
+        height: 88px;
+        flex-basis: 88px;
+        border-radius: 20px;
+      }
+
+      .app-top {
+        gap: 16px;
+      }
+
+      .app-title h3 {
+        font-size: 1.2rem;
+      }
+
+      .education-heading {
+        margin-top: 56px;
+      }
+    }
+  </style>
 </SiteLayout>
