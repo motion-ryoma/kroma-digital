@@ -1,75 +1,78 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 
-const starterItems = [
-  ['Business description', 'Khmer + English'],
-  ['Facebook About text', 'Khmer + English'],
-  ['Google Business description', 'Khmer + English'],
-  ['Facebook posts', '8 ready-to-post ideas'],
-  ['Promotion posts', '2 sales-focused posts'],
-  ['Review reply templates', '10 useful replies'],
-  ['FAQ answers', '5 common questions'],
-  ['Promotion ideas', '3 practical ideas'],
+const audiences = [
+  ['ភោជនីយដ្ឋាន / កាហ្វេ', 'Restaurant / Cafe'],
+  ['ហាងសម្អាង / ក្រចក', 'Beauty Salon / Nail'],
+  ['ម៉ាស្សា / ស្ប៉ា', 'Massage / Spa'],
+  ['សណ្ឋាគារ / ផ្ទះសំណាក់', 'Hotel / Guesthouse'],
+  ['ហាងលក់រាយ', 'Retail Shop'],
+  ['ជួលម៉ូតូ', 'Motorbike Rental'],
 ];
-
-const audiences = ['Restaurant / Cafe', 'Beauty Salon / Nail', 'Massage / Spa', 'Hotel / Guesthouse', 'Retail Shop', 'Motorbike Rental'];
 ---
 
 <SiteLayout
-  title="Local Business Content Services"
-  description="Ready-to-post Khmer and English Facebook and Google content for small businesses in Siem Reap. Business Starter Pack from $20 one-time."
+  title="សេវាមាតិកាសម្រាប់អាជីវកម្មក្នុងសៀមរាប"
+  description="មាតិកា Facebook និង Google ជាភាសាខ្មែរ និងអង់គ្លេស សម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប។ Business Starter Pack តម្លៃ $20 បង់ម្តង។"
 >
   <section class="service-hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">For small businesses in Siem Reap</span>
-        <h1>Your business online,<br />ready to post.</h1>
-        <p class="lead">We create practical Khmer + English content for Facebook and Google so you can spend less time writing and more time running your business.</p>
+        <span class="eyebrow" data-i18n data-km="សម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប" data-en="For small businesses in Siem Reap">សម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប</span>
+        <h1 data-i18n data-km="ធ្វើឱ្យអាជីវកម្មរបស់អ្នកមើលទៅល្អលើអនឡាញ និងត្រៀមបង្ហោះភ្លាមៗ។" data-en="Your business online, ready to post.">ធ្វើឱ្យអាជីវកម្មរបស់អ្នកមើលទៅល្អលើអនឡាញ និងត្រៀមបង្ហោះភ្លាមៗ។</h1>
+        <p class="lead" data-i18n data-km="យើងរៀបចំមាតិកា Facebook និង Google ជាភាសាខ្មែរ + អង់គ្លេស ដើម្បីឱ្យអ្នកចំណាយពេលតិចលើការសរសេរ និងមានពេលច្រើនសម្រាប់អាជីវកម្មរបស់អ្នក។" data-en="We create practical Khmer + English content for Facebook and Google so you can spend less time writing and more time running your business.">យើងរៀបចំមាតិកា Facebook និង Google ជាភាសាខ្មែរ + អង់គ្លេស ដើម្បីឱ្យអ្នកចំណាយពេលតិចលើការសរសេរ និងមានពេលច្រើនសម្រាប់អាជីវកម្មរបស់អ្នក។</p>
         <div class="hero-actions">
-          <a class="cta primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer">Get 1 free sample post</a>
-          <a class="cta secondary" href="#starter">See the $20 Starter Pack</a>
+          <a class="cta primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="ទទួលបានគំរូ Post ឥតគិតថ្លៃ 1" data-en="Get 1 free sample post">ទទួលបានគំរូ Post ឥតគិតថ្លៃ 1</a>
+          <a class="cta secondary" href="#starter" data-i18n data-km="មើល Starter Pack $20" data-en="See the $20 Starter Pack">មើល Starter Pack $20</a>
         </div>
-        <p class="micro">No contract. Send us your business name, category and Facebook page. We will create one sample post first.</p>
+        <p class="micro" data-i18n data-km="គ្មានកិច្ចសន្យា។ ផ្ញើឈ្មោះអាជីវកម្ម ប្រភេទអាជីវកម្ម និង Facebook Page របស់អ្នកមកយើង។ យើងនឹងបង្កើត Post គំរូមួយឱ្យមើលជាមុន។" data-en="No contract. Send us your business name, category and Facebook page. We will create one sample post first.">គ្មានកិច្ចសន្យា។ ផ្ញើឈ្មោះអាជីវកម្ម ប្រភេទអាជីវកម្ម និង Facebook Page របស់អ្នកមកយើង។ យើងនឹងបង្កើត Post គំរូមួយឱ្យមើលជាមុន។</p>
       </div>
       <aside class="price-card">
         <span class="small-label">Business Starter Pack</span>
-        <div class="price"><strong>$20</strong><span>one-time</span></div>
-        <p>Ready-to-use content for your business in Khmer and English.</p>
+        <div class="price"><strong>$20</strong><span data-i18n data-km="បង់ម្តង" data-en="one-time">បង់ម្តង</span></div>
+        <p data-i18n data-km="មាតិកាត្រៀមប្រើសម្រាប់អាជីវកម្មរបស់អ្នក ជាភាសាខ្មែរ និងអង់គ្លេស។" data-en="Ready-to-use content for your business in Khmer and English.">មាតិកាត្រៀមប្រើសម្រាប់អាជីវកម្មរបស់អ្នក ជាភាសាខ្មែរ និងអង់គ្លេស។</p>
         <ul>
-          <li>Facebook content</li>
-          <li>Google Business copy</li>
-          <li>Review + FAQ templates</li>
-          <li>Usually delivered within 48 hours</li>
+          <li data-i18n data-km="មាតិកា Facebook" data-en="Facebook content">មាតិកា Facebook</li>
+          <li data-i18n data-km="អត្ថបទ Google Business" data-en="Google Business copy">អត្ថបទ Google Business</li>
+          <li data-i18n data-km="គំរូឆ្លើយតប Review + FAQ" data-en="Review + FAQ templates">គំរូឆ្លើយតប Review + FAQ</li>
+          <li data-i18n data-km="ជាទូទៅដឹកជញ្ជូនក្នុងរយៈពេល 48 ម៉ោង" data-en="Usually delivered within 48 hours">ជាទូទៅដឹកជញ្ជូនក្នុងរយៈពេល 48 ម៉ោង</li>
         </ul>
       </aside>
     </div>
   </section>
 
-  <section class="audience"><div class="wrap"><p class="kicker">Made for local businesses</p><div class="audience-grid">{audiences.map((item) => <span>{item}</span>)}</div></div></section>
+  <section class="audience"><div class="wrap"><p class="kicker" data-i18n data-km="សម្រាប់អាជីវកម្មក្នុងតំបន់" data-en="Made for local businesses">សម្រាប់អាជីវកម្មក្នុងតំបន់</p><div class="audience-grid">{audiences.map(([km,en]) => <span data-i18n data-km={km} data-en={en}>{km}</span>)}</div></div></section>
 
   <section class="content" id="starter">
     <div class="wrap narrow-head">
       <span class="eyebrow dark">Business Starter Pack</span>
-      <h2>Everything you need to improve your business profile and start posting.</h2>
-      <p>Simple deliverables, clear pricing and no long-term commitment.</p>
+      <h2 data-i18n data-km="អ្វីដែលអ្នកត្រូវការ ដើម្បីកែលម្អ Profile អាជីវកម្ម និងចាប់ផ្តើមបង្ហោះបានភ្លាមៗ។" data-en="Everything you need to improve your business profile and start posting.">អ្វីដែលអ្នកត្រូវការ ដើម្បីកែលម្អ Profile អាជីវកម្ម និងចាប់ផ្តើមបង្ហោះបានភ្លាមៗ។</h2>
+      <p data-i18n data-km="តម្លៃច្បាស់លាស់ មាតិកាច្បាស់លាស់ និងគ្មានការបង្ខំឱ្យបន្តប្រចាំខែ។" data-en="Simple deliverables, clear pricing and no long-term commitment.">តម្លៃច្បាស់លាស់ មាតិកាច្បាស់លាស់ និងគ្មានការបង្ខំឱ្យបន្តប្រចាំខែ។</p>
     </div>
     <div class="wrap starter-grid">
       <div class="deliverables">
-        {starterItems.map(([title, detail]) => <article><span class="check">✓</span><div><h3>{title}</h3><p>{detail}</p></div></article>)}
+        <article><span class="check">✓</span><div><h3 data-i18n data-km="ពិពណ៌នាអាជីវកម្ម" data-en="Business description">ពិពណ៌នាអាជីវកម្ម</h3><p>Khmer + English</p></div></article>
+        <article><span class="check">✓</span><div><h3>Facebook About</h3><p>Khmer + English</p></div></article>
+        <article><span class="check">✓</span><div><h3>Google Business</h3><p>Khmer + English</p></div></article>
+        <article><span class="check">✓</span><div><h3 data-i18n data-km="Facebook Posts" data-en="Facebook posts">Facebook Posts</h3><p data-i18n data-km="8 Post ត្រៀមប្រើ" data-en="8 ready-to-post ideas">8 Post ត្រៀមប្រើ</p></div></article>
+        <article><span class="check">✓</span><div><h3 data-i18n data-km="Post ផ្សព្វផ្សាយ" data-en="Promotion posts">Post ផ្សព្វផ្សាយ</h3><p data-i18n data-km="2 Post សម្រាប់ការលក់" data-en="2 sales-focused posts">2 Post សម្រាប់ការលក់</p></div></article>
+        <article><span class="check">✓</span><div><h3 data-i18n data-km="គំរូឆ្លើយតប Review" data-en="Review reply templates">គំរូឆ្លើយតប Review</h3><p data-i18n data-km="10 គំរូ" data-en="10 useful replies">10 គំរូ</p></div></article>
+        <article><span class="check">✓</span><div><h3>FAQ</h3><p data-i18n data-km="5 សំណួរ និងចម្លើយទូទៅ" data-en="5 common questions">5 សំណួរ និងចម្លើយទូទៅ</p></div></article>
+        <article><span class="check">✓</span><div><h3 data-i18n data-km="គំនិតផ្សព្វផ្សាយ" data-en="Promotion ideas">គំនិតផ្សព្វផ្សាយ</h3><p data-i18n data-km="3 គំនិតអនុវត្តបាន" data-en="3 practical ideas">3 គំនិតអនុវត្តបាន</p></div></article>
       </div>
       <div class="order-card">
-        <h3>What we need from you</h3>
+        <h3 data-i18n data-km="ព័ត៌មានដែលយើងត្រូវការពីអ្នក" data-en="What we need from you">ព័ត៌មានដែលយើងត្រូវការពីអ្នក</h3>
         <ul>
-          <li>Business name</li>
-          <li>Business category</li>
-          <li>Facebook page</li>
-          <li>Google Maps link, if available</li>
-          <li>Main products or services</li>
-          <li>Location and opening hours</li>
+          <li data-i18n data-km="ឈ្មោះអាជីវកម្ម" data-en="Business name">ឈ្មោះអាជីវកម្ម</li>
+          <li data-i18n data-km="ប្រភេទអាជីវកម្ម" data-en="Business category">ប្រភេទអាជីវកម្ម</li>
+          <li>Facebook Page</li>
+          <li data-i18n data-km="Google Maps link ប្រសិនបើមាន" data-en="Google Maps link, if available">Google Maps link ប្រសិនបើមាន</li>
+          <li data-i18n data-km="ផលិតផល ឬសេវាសំខាន់ៗ" data-en="Main products or services">ផលិតផល ឬសេវាសំខាន់ៗ</li>
+          <li data-i18n data-km="ទីតាំង និងម៉ោងបើក" data-en="Location and opening hours">ទីតាំង និងម៉ោងបើក</li>
           <li>Phone / Telegram / WhatsApp</li>
-          <li>Preferred language: Khmer, English or both</li>
+          <li data-i18n data-km="ភាសាដែលចង់បាន៖ ខ្មែរ អង់គ្លេស ឬទាំងពីរ" data-en="Preferred language: Khmer, English or both">ភាសាដែលចង់បាន៖ ខ្មែរ អង់គ្លេស ឬទាំងពីរ</li>
         </ul>
-        <p class="note">Optional: menu, prices, promotions, popular products, photos and target customers.</p>
+        <p class="note" data-i18n data-km="បើមាន សូមផ្ញើ៖ Menu តម្លៃ Promotion ផលិតផលពេញនិយម រូបថត និងក្រុមអតិថិជនគោលដៅ។" data-en="Optional: menu, prices, promotions, popular products, photos and target customers.">បើមាន សូមផ្ញើ៖ Menu តម្លៃ Promotion ផលិតផលពេញនិយម រូបថត និងក្រុមអតិថិជនគោលដៅ។</p>
       </div>
     </div>
   </section>
@@ -77,74 +80,26 @@ const audiences = ['Restaurant / Cafe', 'Beauty Salon / Nail', 'Massage / Spa', 
   <section class="example-section">
     <div class="wrap narrow-head">
       <span class="eyebrow dark">Before → After</span>
-      <h2>See what better business content looks like.</h2>
+      <h2 data-i18n data-km="មើលភាពខុសគ្នាមុន និងក្រោយកែលម្អមាតិកា។" data-en="See what better business content looks like.">មើលភាពខុសគ្នាមុន និងក្រោយកែលម្អមាតិកា។</h2>
     </div>
     <div class="wrap example-grid">
-      <article class="example before">
-        <span>Before</span>
-        <h3>ABC Cafe</h3>
-        <p>Good coffee and food in Siem Reap. Welcome everyone.</p>
-      </article>
+      <article class="example before"><span>Before</span><h3>ABC Cafe</h3><p data-i18n data-km="កាហ្វេ និងអាហារល្អនៅសៀមរាប។ សូមស្វាគមន៍ទាំងអស់គ្នា។" data-en="Good coffee and food in Siem Reap. Welcome everyone.">កាហ្វេ និងអាហារល្អនៅសៀមរាប។ សូមស្វាគមន៍ទាំងអស់គ្នា។</p></article>
       <div class="arrow" aria-hidden="true">→</div>
-      <article class="example after">
-        <span>After</span>
-        <h3>ABC Cafe</h3>
-        <p>☕ Looking for a relaxing coffee break in Siem Reap? Enjoy freshly brewed coffee, simple food and a comfortable atmosphere. Visit us today and make your day a little brighter.</p>
-        <small>#SiemReap #Cafe #GoodCoffee</small>
-      </article>
+      <article class="example after"><span>After</span><h3>ABC Cafe</h3><p data-i18n data-km="☕ កំពុងស្វែងរកកន្លែងសម្រាកជាមួយកាហ្វេល្អនៅសៀមរាបមែនទេ? សូមរីករាយជាមួយកាហ្វេស្រស់ អាហារសាមញ្ញ និងបរិយាកាសផាសុកភាព។ មកលេងយើងថ្ងៃនេះ ហើយធ្វើឱ្យថ្ងៃរបស់អ្នកកាន់តែល្អ។" data-en="☕ Looking for a relaxing coffee break in Siem Reap? Enjoy freshly brewed coffee, simple food and a comfortable atmosphere. Visit us today and make your day a little brighter.">☕ កំពុងស្វែងរកកន្លែងសម្រាកជាមួយកាហ្វេល្អនៅសៀមរាបមែនទេ? សូមរីករាយជាមួយកាហ្វេស្រស់ អាហារសាមញ្ញ និងបរិយាកាសផាសុកភាព។ មកលេងយើងថ្ងៃនេះ ហើយធ្វើឱ្យថ្ងៃរបស់អ្នកកាន់តែល្អ។</p><small>#SiemReap #Cafe #GoodCoffee</small></article>
     </div>
-    <div class="wrap sample-callout">
-      <div><strong>Try it before you buy.</strong><p>We will create one free sample Facebook post for your business.</p></div>
-      <a class="cta primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer">Message Kroma Digital</a>
-    </div>
+    <div class="wrap sample-callout"><div><strong data-i18n data-km="សាកមុនសិន មិនចាំបាច់ទិញភ្លាមទេ។" data-en="Try it before you buy.">សាកមុនសិន មិនចាំបាច់ទិញភ្លាមទេ។</strong><p data-i18n data-km="យើងបង្កើត Facebook Post គំរូ 1 ដោយឥតគិតថ្លៃសម្រាប់អាជីវកម្មរបស់អ្នក។" data-en="We will create one free sample Facebook post for your business.">យើងបង្កើត Facebook Post គំរូ 1 ដោយឥតគិតថ្លៃសម្រាប់អាជីវកម្មរបស់អ្នក។</p></div><a class="cta primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="ផ្ញើសារ Kroma Digital" data-en="Message Kroma Digital">ផ្ញើសារ Kroma Digital</a></div>
   </section>
 
-  <section class="monthly-section">
-    <div class="wrap monthly-card">
-      <div>
-        <span class="eyebrow dark">For ongoing support</span>
-        <h2>Monthly Content Pack</h2>
-        <p>For businesses that want fresh content every month without writing everything themselves.</p>
-      </div>
-      <div class="monthly-price"><strong>$25</strong><span>/ month</span></div>
-      <ul>
-        <li>8 Facebook posts every month</li>
-        <li>2 promotion posts</li>
-        <li>Khmer + English</li>
-        <li>Photo ideas</li>
-        <li>Hashtag suggestions</li>
-      </ul>
-    </div>
-  </section>
+  <section class="monthly-section"><div class="wrap monthly-card"><div><span class="eyebrow dark" data-i18n data-km="សម្រាប់អ្នកដែលចង់បានការគាំទ្របន្ត" data-en="For ongoing support">សម្រាប់អ្នកដែលចង់បានការគាំទ្របន្ត</span><h2>Monthly Content Pack</h2><p data-i18n data-km="សម្រាប់អាជីវកម្មដែលចង់បានមាតិកាថ្មីរៀងរាល់ខែ ដោយមិនចាំបាច់សរសេរដោយខ្លួនឯង។" data-en="For businesses that want fresh content every month without writing everything themselves.">សម្រាប់អាជីវកម្មដែលចង់បានមាតិកាថ្មីរៀងរាល់ខែ ដោយមិនចាំបាច់សរសេរដោយខ្លួនឯង។</p></div><div class="monthly-price"><strong>$25</strong><span data-i18n data-km="/ ខែ" data-en="/ month">/ ខែ</span></div><ul><li data-i18n data-km="Facebook Posts 8 ក្នុងមួយខែ" data-en="8 Facebook posts every month">Facebook Posts 8 ក្នុងមួយខែ</li><li data-i18n data-km="Promotion Posts 2" data-en="2 promotion posts">Promotion Posts 2</li><li>Khmer + English</li><li data-i18n data-km="គំនិតសម្រាប់រូបថត" data-en="Photo ideas">គំនិតសម្រាប់រូបថត</li><li data-i18n data-km="សំណើ Hashtag" data-en="Hashtag suggestions">សំណើ Hashtag</li></ul></div></section>
 
-  <section class="process-section">
-    <div class="wrap narrow-head"><span class="eyebrow dark">How it works</span><h2>Four simple steps.</h2></div>
-    <div class="wrap steps">
-      <article><b>1</b><h3>Send information</h3><p>Message us your basic business details.</p></article>
-      <article><b>2</b><h3>We create</h3><p>We prepare content tailored to your business.</p></article>
-      <article><b>3</b><h3>You review</h3><p>Check the content and request one light revision if needed.</p></article>
-      <article><b>4</b><h3>We deliver</h3><p>Receive ready-to-use content in a simple digital format.</p></article>
-    </div>
-  </section>
+  <section class="process-section"><div class="wrap narrow-head"><span class="eyebrow dark" data-i18n data-km="របៀបធ្វើការ" data-en="How it works">របៀបធ្វើការ</span><h2 data-i18n data-km="4 ជំហានសាមញ្ញ។" data-en="Four simple steps.">4 ជំហានសាមញ្ញ។</h2></div><div class="wrap steps"><article><b>1</b><h3 data-i18n data-km="ផ្ញើព័ត៌មាន" data-en="Send information">ផ្ញើព័ត៌មាន</h3><p data-i18n data-km="ផ្ញើព័ត៌មានមូលដ្ឋានអំពីអាជីវកម្មរបស់អ្នកតាម Messenger។" data-en="Message us your basic business details.">ផ្ញើព័ត៌មានមូលដ្ឋានអំពីអាជីវកម្មរបស់អ្នកតាម Messenger។</p></article><article><b>2</b><h3 data-i18n data-km="យើងរៀបចំមាតិកា" data-en="We create">យើងរៀបចំមាតិកា</h3><p data-i18n data-km="យើងបង្កើតមាតិកាដែលសមនឹងអាជីវកម្មរបស់អ្នក។" data-en="We prepare content tailored to your business.">យើងបង្កើតមាតិកាដែលសមនឹងអាជីវកម្មរបស់អ្នក។</p></article><article><b>3</b><h3 data-i18n data-km="អ្នកពិនិត្យ" data-en="You review">អ្នកពិនិត្យ</h3><p data-i18n data-km="ពិនិត្យមាតិកា និងស្នើកែសម្រួលតិចតួចបាន 1 ដង។" data-en="Check the content and request one light revision if needed.">ពិនិត្យមាតិកា និងស្នើកែសម្រួលតិចតួចបាន 1 ដង។</p></article><article><b>4</b><h3 data-i18n data-km="យើងប្រគល់ជូន" data-en="We deliver">យើងប្រគល់ជូន</h3><p data-i18n data-km="ទទួលមាតិកាដែលត្រៀមប្រើបានភ្លាមៗក្នុងទម្រង់ឌីជីថល។" data-en="Receive ready-to-use content in a simple digital format.">ទទួលមាតិកាដែលត្រៀមប្រើបានភ្លាមៗក្នុងទម្រង់ឌីជីថល។</p></article></div></section>
 
-  <section class="faq-section">
-    <div class="wrap faq-grid">
-      <div><span class="eyebrow dark">FAQ</span><h2>Simple service. Clear scope.</h2></div>
-      <div class="faqs">
-        <details open><summary>Do you take the photos?</summary><p>Photo production is not included in the $20 Starter Pack. We can recommend what photos to take for your business.</p></details>
-        <details><summary>How fast is delivery?</summary><p>Normal delivery is usually within 48 hours after we receive the required information.</p></details>
-        <details><summary>Can I request changes?</summary><p>One light revision is included with the Starter Pack.</p></details>
-        <details><summary>Do I need to subscribe?</summary><p>No. The Starter Pack is a one-time $20 service. The Monthly Content Pack is optional.</p></details>
-      </div>
-    </div>
-  </section>
+  <section class="faq-section"><div class="wrap faq-grid"><div><span class="eyebrow dark">FAQ</span><h2 data-i18n data-km="សេវាសាមញ្ញ និងវិសាលភាពច្បាស់លាស់។" data-en="Simple service. Clear scope.">សេវាសាមញ្ញ និងវិសាលភាពច្បាស់លាស់។</h2></div><div class="faqs"><details open><summary data-i18n data-km="តើអ្នកថតរូបឱ្យដែរឬទេ?" data-en="Do you take the photos?">តើអ្នកថតរូបឱ្យដែរឬទេ?</summary><p data-i18n data-km="ការថតរូបមិនរួមបញ្ចូលក្នុង Starter Pack $20 ទេ។ ប៉ុន្តែយើងអាចណែនាំថាគួរថតរូបបែបណាសម្រាប់អាជីវកម្មរបស់អ្នក។" data-en="Photo production is not included in the $20 Starter Pack. We can recommend what photos to take for your business.">ការថតរូបមិនរួមបញ្ចូលក្នុង Starter Pack $20 ទេ។ ប៉ុន្តែយើងអាចណែនាំថាគួរថតរូបបែបណាសម្រាប់អាជីវកម្មរបស់អ្នក។</p></details><details><summary data-i18n data-km="តើប្រគល់ការងារលឿនប៉ុណ្ណា?" data-en="How fast is delivery?">តើប្រគល់ការងារលឿនប៉ុណ្ណា?</summary><p data-i18n data-km="ជាទូទៅក្នុងរយៈពេល 48 ម៉ោង បន្ទាប់ពីយើងទទួលបានព័ត៌មានចាំបាច់។" data-en="Normal delivery is usually within 48 hours after we receive the required information.">ជាទូទៅក្នុងរយៈពេល 48 ម៉ោង បន្ទាប់ពីយើងទទួលបានព័ត៌មានចាំបាច់។</p></details><details><summary data-i18n data-km="តើខ្ញុំអាចស្នើកែបានទេ?" data-en="Can I request changes?">តើខ្ញុំអាចស្នើកែបានទេ?</summary><p data-i18n data-km="បាន។ Starter Pack រួមបញ្ចូលការកែសម្រួលតិចតួច 1 ដង។" data-en="One light revision is included with the Starter Pack.">បាន។ Starter Pack រួមបញ្ចូលការកែសម្រួលតិចតួច 1 ដង។</p></details><details><summary data-i18n data-km="តើត្រូវជាវប្រចាំខែទេ?" data-en="Do I need to subscribe?">តើត្រូវជាវប្រចាំខែទេ?</summary><p data-i18n data-km="មិនចាំបាច់ទេ។ Starter Pack គឺ $20 បង់ម្តង។ Monthly Content Pack គឺជាជម្រើសបន្ថែមប៉ុណ្ណោះ។" data-en="No. The Starter Pack is a one-time $20 service. The Monthly Content Pack is optional.">មិនចាំបាច់ទេ។ Starter Pack គឺ $20 បង់ម្តង។ Monthly Content Pack គឺជាជម្រើសបន្ថែមប៉ុណ្ណោះ។</p></details></div></div></section>
 
-  <section class="final-cta">
-    <div class="wrap final-row"><div><h2>Start with one free sample post.</h2><p>No commitment. See the quality first.</p></div><a class="cta primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer">Get your free sample</a></div>
-  </section>
+  <section class="final-cta"><div class="wrap final-row"><div><h2 data-i18n data-km="ចាប់ផ្តើមជាមួយ Post គំរូឥតគិតថ្លៃ 1។" data-en="Start with one free sample post.">ចាប់ផ្តើមជាមួយ Post គំរូឥតគិតថ្លៃ 1។</h2><p data-i18n data-km="គ្មានកាតព្វកិច្ច។ មើលគុណភាពជាមុនសិន។" data-en="No commitment. See the quality first.">គ្មានកាតព្វកិច្ច។ មើលគុណភាពជាមុនសិន។</p></div><a class="cta primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="ទទួលបាន Post គំរូឥតគិតថ្លៃ" data-en="Get your free sample">ទទួលបាន Post គំរូឥតគិតថ្លៃ</a></div></section>
 
   <style>
-    .service-hero{background:linear-gradient(135deg,#041426 0%,#0a3159 100%);color:#fff;padding:82px 0 74px}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:54px;align-items:center}.service-hero h1{font-size:clamp(3rem,6vw,5.2rem);line-height:.98;letter-spacing:-.055em;margin:14px 0 22px}.lead{font-size:1.2rem;max-width:730px;color:rgba(255,255,255,.78);margin:0}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;font-weight:850}.cta.primary{background:#1877f2;color:#fff}.cta.primary:hover{background:#1268d7}.cta.secondary{border:1px solid rgba(255,255,255,.4);color:#fff}.micro{font-size:.84rem;color:rgba(255,255,255,.58);margin:14px 0 0}.price-card{background:#fff;color:var(--ink);padding:30px;border-radius:24px;box-shadow:0 24px 60px rgba(0,0,0,.22)}.small-label{font-weight:850;color:#174d86}.price{display:flex;align-items:end;gap:10px;margin:8px 0}.price strong{font-size:4rem;line-height:1;color:#0b67ce}.price span{color:var(--muted);padding-bottom:7px}.price-card p{color:var(--muted)}.price-card ul{padding-left:20px;margin:18px 0 0}.price-card li{margin:7px 0}.audience{padding:26px 0;background:#eef6ff;border-bottom:1px solid #dbe7f4}.kicker{text-align:center;font-weight:850;color:#174d86;margin:0 0 12px}.audience-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.audience-grid span{text-align:center;background:#fff;border:1px solid #dce8f5;border-radius:12px;padding:10px 7px;font-size:.84rem;font-weight:750}.content,.example-section,.process-section,.faq-section{padding:76px 0}.narrow-head{max-width:850px;margin-bottom:30px}.eyebrow.dark{color:#0b67ce}.narrow-head h2,.faq-grid h2,.monthly-card h2,.final-cta h2{font-size:clamp(2rem,4vw,3.25rem);line-height:1.06;letter-spacing:-.04em;margin:10px 0 12px}.narrow-head p{color:var(--muted)}.starter-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:22px}.deliverables{display:grid;grid-template-columns:1fr 1fr;gap:12px}.deliverables article{display:flex;gap:13px;padding:18px;border:1px solid var(--line);border-radius:16px}.check{display:grid;place-items:center;width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:#e8f7ec;color:#178342;font-weight:900}.deliverables h3{font-size:1rem;margin:0 0 3px}.deliverables p{margin:0;color:var(--muted);font-size:.88rem}.order-card{padding:25px;border-radius:20px;background:#f5f8fc;border:1px solid var(--line)}.order-card h3{margin-top:0}.order-card ul{padding-left:20px}.order-card li{margin:6px 0}.note{font-size:.87rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}.example-section{background:#f5f8fc}.example-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center}.example{padding:28px;border-radius:20px;background:#fff;border:1px solid var(--line);min-height:220px}.example span{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;font-weight:900}.example.before span{color:#8a4d00}.example.after span{color:#0b67ce}.example p{color:var(--muted)}.example small{color:#1268d7}.arrow{font-size:2rem;font-weight:900;color:#0b67ce}.sample-callout{margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 26px;background:#081d36;color:#fff;border-radius:20px}.sample-callout strong{font-size:1.25rem}.sample-callout p{margin:3px 0 0;color:rgba(255,255,255,.68)}.monthly-section{padding:18px 0 76px;background:#f5f8fc}.monthly-card{display:grid;grid-template-columns:1.15fr auto .85fr;gap:32px;align-items:center;padding:30px;background:linear-gradient(135deg,#eaffed,#f8fff9);border:1px solid #cdebd2;border-radius:24px}.monthly-card p{color:var(--muted)}.monthly-price strong{font-size:3.25rem;color:#0c7a38}.monthly-price span{color:var(--muted)}.monthly-card ul{margin:0;padding-left:20px}.monthly-card li{margin:7px 0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.steps article{padding:24px;border:1px solid var(--line);border-radius:18px}.steps b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#e8f2ff;color:#1268d7}.steps h3{margin:14px 0 7px}.steps p{margin:0;color:var(--muted)}.faq-section{background:#f8fbff}.faq-grid{display:grid;grid-template-columns:.65fr 1.35fr;gap:46px}.faqs{display:grid;gap:10px}.faqs details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}.faqs summary{font-weight:850;cursor:pointer}.faqs p{margin:10px 0 0;color:var(--muted)}.final-cta{padding:50px 0;background:#071f3b;color:#fff}.final-row{display:flex;align-items:center;justify-content:space-between;gap:30px}.final-cta h2{margin:0 0 6px}.final-cta p{margin:0;color:rgba(255,255,255,.68)}
+    .service-hero{background:linear-gradient(135deg,#041426 0%,#0a3159 100%);color:#fff;padding:82px 0 74px}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:54px;align-items:center}.service-hero h1{font-size:clamp(2.6rem,5.5vw,4.8rem);line-height:1.14;letter-spacing:-.035em;margin:14px 0 22px}.lead{font-size:1.14rem;max-width:730px;color:rgba(255,255,255,.78);margin:0}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;font-weight:850}.cta.primary{background:#1877f2;color:#fff}.cta.primary:hover{background:#1268d7}.cta.secondary{border:1px solid rgba(255,255,255,.4);color:#fff}.micro{font-size:.84rem;color:rgba(255,255,255,.58);margin:14px 0 0}.price-card{background:#fff;color:var(--ink);padding:30px;border-radius:24px;box-shadow:0 24px 60px rgba(0,0,0,.22)}.small-label{font-weight:850;color:#174d86}.price{display:flex;align-items:end;gap:10px;margin:8px 0}.price strong{font-size:4rem;line-height:1;color:#0b67ce}.price span{color:var(--muted);padding-bottom:7px}.price-card p{color:var(--muted)}.price-card ul{padding-left:20px;margin:18px 0 0}.price-card li{margin:7px 0}.audience{padding:26px 0;background:#eef6ff;border-bottom:1px solid #dbe7f4}.kicker{text-align:center;font-weight:850;color:#174d86;margin:0 0 12px}.audience-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.audience-grid span{text-align:center;background:#fff;border:1px solid #dce8f5;border-radius:12px;padding:10px 7px;font-size:.84rem;font-weight:750}.content,.example-section,.process-section,.faq-section{padding:76px 0}.narrow-head{max-width:850px;margin-bottom:30px}.eyebrow.dark{color:#0b67ce}.narrow-head h2,.faq-grid h2,.monthly-card h2,.final-cta h2{font-size:clamp(2rem,4vw,3.15rem);line-height:1.18;letter-spacing:-.025em;margin:10px 0 12px}.narrow-head p{color:var(--muted)}.starter-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:22px}.deliverables{display:grid;grid-template-columns:1fr 1fr;gap:12px}.deliverables article{display:flex;gap:13px;padding:18px;border:1px solid var(--line);border-radius:16px}.check{display:grid;place-items:center;width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:#e8f7ec;color:#178342;font-weight:900}.deliverables h3{font-size:1rem;margin:0 0 3px}.deliverables p{margin:0;color:var(--muted);font-size:.88rem}.order-card{padding:25px;border-radius:20px;background:#f5f8fc;border:1px solid var(--line)}.order-card h3{margin-top:0}.order-card ul{padding-left:20px}.order-card li{margin:6px 0}.note{font-size:.87rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}.example-section{background:#f5f8fc}.example-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center}.example{padding:28px;border-radius:20px;background:#fff;border:1px solid var(--line);min-height:220px}.example span{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;font-weight:900}.example.before span{color:#8a4d00}.example.after span{color:#0b67ce}.example p{color:var(--muted)}.example small{color:#1268d7}.arrow{font-size:2rem;font-weight:900;color:#0b67ce}.sample-callout{margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 26px;background:#081d36;color:#fff;border-radius:20px}.sample-callout strong{font-size:1.25rem}.sample-callout p{margin:3px 0 0;color:rgba(255,255,255,.68)}.monthly-section{padding:18px 0 76px;background:#f5f8fc}.monthly-card{display:grid;grid-template-columns:1.15fr auto .85fr;gap:32px;align-items:center;padding:30px;background:linear-gradient(135deg,#eaffed,#f8fff9);border:1px solid #cdebd2;border-radius:24px}.monthly-card p{color:var(--muted)}.monthly-price strong{font-size:3.25rem;color:#0c7a38}.monthly-price span{color:var(--muted)}.monthly-card ul{margin:0;padding-left:20px}.monthly-card li{margin:7px 0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.steps article{padding:24px;border:1px solid var(--line);border-radius:18px}.steps b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#e8f2ff;color:#1268d7}.steps h3{margin:14px 0 7px}.steps p{margin:0;color:var(--muted)}.faq-section{background:#f8fbff}.faq-grid{display:grid;grid-template-columns:.65fr 1.35fr;gap:46px}.faqs{display:grid;gap:10px}.faqs details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}.faqs summary{font-weight:850;cursor:pointer}.faqs p{margin:10px 0 0;color:var(--muted)}.final-cta{padding:50px 0;background:#071f3b;color:#fff}.final-row{display:flex;align-items:center;justify-content:space-between;gap:30px}.final-cta h2{margin:0 0 6px}.final-cta p{margin:0;color:rgba(255,255,255,.68)}
     @media(max-width:900px){.hero-grid,.starter-grid,.monthly-card,.faq-grid{grid-template-columns:1fr}.audience-grid{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:1fr 1fr}.monthly-price{display:flex;align-items:end;gap:8px}}
     @media(max-width:640px){.service-hero{padding:58px 0}.deliverables,.steps{grid-template-columns:1fr}.audience-grid{grid-template-columns:1fr 1fr}.example-grid{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}.sample-callout,.final-row{align-items:flex-start;flex-direction:column}.price strong{font-size:3.4rem}.content,.example-section,.process-section,.faq-section{padding:58px 0}}
   </style>
