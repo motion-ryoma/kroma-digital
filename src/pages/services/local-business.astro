@@ -2,277 +2,80 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 ---
 
-<SiteLayout
-  title="សេវា Facebook និង Google សម្រាប់អាជីវកម្មក្នុងសៀមរាប"
-  description="Kroma Digital រៀបចំអត្ថបទ Facebook និង Google ជាភាសាខ្មែរ និងអង់គ្លេស សម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប។ Starter Pack $20 បង់ម្តង។"
->
-  <!-- 1. WHAT THIS SERVICE IS: explain with words -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow" data-i18n data-km="សេវាសម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប" data-en="For small businesses in Siem Reap">សេវាសម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប</span>
-        <h1 data-i18n data-km="យើងរៀបចំអត្ថបទ Facebook និង Google សម្រាប់អាជីវកម្មរបស់អ្នក" data-en="We create Facebook and Google content for your business">យើងរៀបចំអត្ថបទ Facebook និង Google សម្រាប់អាជីវកម្មរបស់អ្នក</h1>
-        <p class="hero-lead" data-i18n data-km="Kroma Digital បង្កើត Post និងព័ត៌មានអាជីវកម្ម ជាភាសាខ្មែរ + អង់គ្លេស។ អ្នកទទួលបានអត្ថបទត្រៀមប្រើ ហើយអាច Copy & Post បានភ្លាមៗ។" data-en="Kroma Digital creates posts and business information in Khmer + English. You receive ready-to-use content that you can copy and post immediately.">Kroma Digital បង្កើត Post និងព័ត៌មានអាជីវកម្ម ជាភាសាខ្មែរ + អង់គ្លេស។ អ្នកទទួលបានអត្ថបទត្រៀមប្រើ ហើយអាច Copy & Post បានភ្លាមៗ។</p>
+<SiteLayout title="សេវាបង្កើតមាតិកា Facebook និង Google សម្រាប់អាជីវកម្មក្នុងសៀមរាប" description="Kroma Digital រៀបចំមាតិកា Facebook និង Google ជាភាសាខ្មែរ និងអង់គ្លេស សម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប។ សាក Post 1 ដោយឥតគិតថ្លៃ។">
+  <section class="hero"><div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-i18n data-km="សម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប" data-en="For small businesses in Siem Reap">សម្រាប់អាជីវកម្មតូចៗនៅសៀមរាប</p>
+      <h1 data-i18n data-km="យើងសរសេរ Facebook និង Google សម្រាប់អាជីវកម្មរបស់អ្នក" data-en="We write Facebook and Google content for your business">យើងសរសេរ Facebook និង Google សម្រាប់អាជីវកម្មរបស់អ្នក</h1>
+      <p class="lead" data-i18n data-km="ផ្ញើព័ត៌មានអាជីវកម្ម និងរូបថតមកយើង។ Kroma Digital រៀបចំមាតិកាជាភាសាខ្មែរ + English ដែលអ្នកអាចយកទៅប្រើបានភ្លាមៗ។" data-en="Send us your business information and photos. Kroma Digital prepares ready-to-use content in Khmer + English.">ផ្ញើព័ត៌មានអាជីវកម្ម និងរូបថតមកយើង។ Kroma Digital រៀបចំមាតិកាជាភាសាខ្មែរ + English ដែលអ្នកអាចយកទៅប្រើបានភ្លាមៗ។</p>
+      <div class="hero-offer"><div><strong>$20</strong><span data-i18n data-km="បង់ម្តង" data-en="one-time">បង់ម្តង</span></div><div class="free"><strong>FREE</strong><span data-i18n data-km="សាក Post 1 មុន" data-en="Try 1 post first">សាក Post 1 មុន</span></div></div>
+      <div class="actions"><a class="button primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="សុំ Post ឥតគិតថ្លៃ 1" data-en="Get 1 FREE sample post">សុំ Post ឥតគិតថ្លៃ 1</a><a class="button secondary" href="#starter-pack" data-i18n data-km="មើល Starter Pack $20" data-en="See the $20 Starter Pack">មើល Starter Pack $20</a></div>
+    </div>
+    <figure class="hero-image"><img src="/services/local-business/hero-cafe.webp" alt="Cambodian cafe owner viewing prepared social media content" width="1536" height="1024" fetchpriority="high" /><figcaption><span>Facebook</span><span>Google</span><span>ខ្មែរ + English</span></figcaption></figure>
+  </div></section>
 
-        <div class="hero-points">
-          <div><span class="tick">✓</span><span data-i18n data-km="Facebook Posts" data-en="Facebook posts">Facebook Posts</span></div>
-          <div><span class="tick">✓</span><span data-i18n data-km="Google Business" data-en="Google Business">Google Business</span></div>
-          <div><span class="tick">✓</span><span data-i18n data-km="ភាសាខ្មែរ + English" data-en="Khmer + English">ភាសាខ្មែរ + English</span></div>
-        </div>
+  <section class="what"><div class="wrap what-grid">
+    <p class="section-label" data-i18n data-km="អ្វីដែលយើងធ្វើ" data-en="What we do">អ្វីដែលយើងធ្វើ</p>
+    <div><h2 data-i18n data-km="អ្នកបើកអាជីវកម្ម។ យើងរៀបចំពាក្យសម្រាប់ Facebook និង Google។" data-en="You run your business. We prepare the words for Facebook and Google.">អ្នកបើកអាជីវកម្ម។ យើងរៀបចំពាក្យសម្រាប់ Facebook និង Google។</h2><p data-i18n data-km="អ្នកមិនចាំបាច់សរសេរអ្វីគ្រប់យ៉ាងដោយខ្លួនឯងទេ។ យើងយកព័ត៌មានហាង សេវា ផលិតផល និងរូបថតរបស់អ្នក មករៀបចំជាអត្ថបទច្បាស់លាស់ ដែលងាយឱ្យអតិថិជនយល់។" data-en="You do not need to write everything yourself. We turn your shop details, services, products and photos into clear content that customers can understand.">អ្នកមិនចាំបាច់សរសេរអ្វីគ្រប់យ៉ាងដោយខ្លួនឯងទេ។ យើងយកព័ត៌មានហាង សេវា ផលិតផល និងរូបថតរបស់អ្នក មករៀបចំជាអត្ថបទច្បាស់លាស់ ដែលងាយឱ្យអតិថិជនយល់។</p></div>
+  </div></section>
 
-        <div class="offer-row">
-          <div class="price-box"><strong>$20</strong><span data-i18n data-km="បង់ម្តង" data-en="one-time">បង់ម្តង</span></div>
-          <div class="free-box"><b>FREE</b><span data-i18n data-km="សាក Post គំរូ 1 មុន" data-en="Try 1 sample post first">សាក Post គំរូ 1 មុន</span></div>
-        </div>
+  <section class="process"><div class="wrap">
+    <div class="section-heading"><p class="section-label" data-i18n data-km="របៀបប្រើ" data-en="How it works">របៀបប្រើ</p><h2 data-i18n data-km="សាមញ្ញ ត្រឹមតែ 3 ជំហាន" data-en="Simple: only 3 steps">សាមញ្ញ ត្រឹមតែ 3 ជំហាន</h2></div>
+    <img class="process-image" src="/services/local-business/how-it-works.webp" alt="Three steps from sending business details to receiving a ready-to-post social post" width="1942" height="809" loading="lazy" />
+    <ol class="steps">
+      <li><span>1</span><div><h3 data-i18n data-km="ផ្ញើព័ត៌មាន" data-en="Send your information">ផ្ញើព័ត៌មាន</h3><p data-i18n data-km="ឈ្មោះអាជីវកម្ម • រូបថត • Menu • សេវា" data-en="Business name • photos • menu • services">ឈ្មោះអាជីវកម្ម • រូបថត • Menu • សេវា</p></div></li>
+      <li><span>2</span><div><h3 data-i18n data-km="យើងរៀបចំមាតិកា" data-en="We create your content">យើងរៀបចំមាតិកា</h3><p>Facebook + Google • ខ្មែរ + English</p></div></li>
+      <li><span>3</span><div><h3>Copy & Post</h3><p data-i18n data-km="ទទួលអត្ថបទត្រៀមប្រើ" data-en="Receive ready-to-use content">ទទួលអត្ថបទត្រៀមប្រើ</p></div></li>
+    </ol>
+  </div></section>
 
-        <div class="actions">
-          <a class="btn primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="💬 សុំ Post គំរូឥតគិតថ្លៃ" data-en="💬 Get a free sample post">💬 សុំ Post គំរូឥតគិតថ្លៃ</a>
-          <a class="btn secondary" href="#how" data-i18n data-km="មើលរបៀបប្រើ" data-en="See how it works">មើលរបៀបប្រើ</a>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-label="Facebook and Google content prepared for a local business">
-        <svg viewBox="0 0 680 560" role="img">
-          <defs>
-            <filter id="s1"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-opacity=".18"/></filter>
-            <linearGradient id="phoneBg" x1="0" x2="1"><stop stop-color="#eef6ff"/><stop offset="1" stop-color="#fff"/></linearGradient>
-          </defs>
-          <rect x="30" y="30" width="620" height="500" rx="42" fill="#0b2c4f"/>
-          <circle cx="565" cy="112" r="62" fill="#f04438" opacity=".93"/>
-          <circle cx="98" cy="455" r="48" fill="#ffb21a" opacity=".96"/>
-
-          <rect x="92" y="84" width="250" height="392" rx="30" fill="url(#phoneBg)" filter="url(#s1)"/>
-          <rect x="110" y="104" width="214" height="42" rx="14" fill="#1877f2"/>
-          <circle cx="136" cy="125" r="11" fill="#fff"/>
-          <rect x="156" y="117" width="86" height="8" rx="4" fill="#fff"/>
-          <rect x="156" y="130" width="54" height="6" rx="3" fill="#dceaff"/>
-          <rect x="111" y="162" width="212" height="130" rx="16" fill="#f7d9a4"/>
-          <rect x="111" y="245" width="212" height="47" rx="0" fill="#87532f"/>
-          <circle cx="170" cy="214" r="32" fill="#fff1d2"/>
-          <path d="M140 233h60l-7 21h-46z" fill="#fff"/>
-          <path d="M199 238c22 0 22 22 2 24" stroke="#fff" stroke-width="8" fill="none"/>
-          <path d="M161 191c-10-17 11-19 0-36M180 191c-10-17 11-19 0-36" stroke="#fff" stroke-width="6" fill="none" opacity=".9"/>
-          <rect x="126" y="314" width="152" height="10" rx="5" fill="#193d63"/>
-          <rect x="126" y="336" width="176" height="8" rx="4" fill="#91a5ba"/>
-          <rect x="126" y="352" width="162" height="8" rx="4" fill="#c2cfdb"/>
-          <rect x="126" y="380" width="70" height="24" rx="12" fill="#e8f2ff"/>
-          <rect x="206" y="380" width="70" height="24" rx="12" fill="#e8f2ff"/>
-          <rect x="126" y="420" width="176" height="34" rx="17" fill="#1877f2"/>
-          <text x="214" y="443" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">FACEBOOK</text>
-
-          <rect x="376" y="116" width="214" height="146" rx="24" fill="#fff" filter="url(#s1)"/>
-          <circle cx="414" cy="158" r="23" fill="#4285f4"/>
-          <text x="414" y="166" text-anchor="middle" font-size="24" font-weight="900" fill="#fff">G</text>
-          <rect x="450" y="143" width="104" height="10" rx="5" fill="#193d63"/>
-          <rect x="450" y="164" width="78" height="8" rx="4" fill="#a0afbf"/>
-          <rect x="397" y="205" width="158" height="10" rx="5" fill="#7c8fa5"/>
-          <rect x="397" y="225" width="136" height="8" rx="4" fill="#bdc9d6"/>
-
-          <rect x="360" y="300" width="250" height="140" rx="24" fill="#fff" filter="url(#s1)"/>
-          <text x="485" y="342" text-anchor="middle" font-size="24" font-weight="900" fill="#0b2c4f">ខ្មែរ + English</text>
-          <rect x="393" y="366" width="184" height="44" rx="22" fill="#17a05e"/>
-          <text x="485" y="395" text-anchor="middle" font-size="21" font-weight="850" fill="#fff">READY TO POST ✓</text>
-          <path d="M326 220c40 0 47 42 65 62" stroke="#ffb21a" stroke-width="10" fill="none" stroke-linecap="round"/>
-          <path d="M382 270l15 20-24 3" fill="#ffb21a"/>
-        </svg>
+  <section class="benefits"><div class="wrap benefits-grid">
+    <div class="benefit-copy"><p class="section-label" data-i18n data-km="អ្វីដែលផ្លាស់ប្តូរ" data-en="What changes">អ្វីដែលផ្លាស់ប្តូរ</p><h2 data-i18n data-km="អតិថិជនងាយយល់អាជីវកម្មរបស់អ្នកតាមអនឡាញ" data-en="Customers can understand your business more easily online">អតិថិជនងាយយល់អាជីវកម្មរបស់អ្នកតាមអនឡាញ</h2>
+      <div class="benefit-list">
+        <article><span>01</span><div><h3 data-i18n data-km="Facebook មើលទៅច្បាស់ជាងមុន" data-en="A clearer Facebook presence">Facebook មើលទៅច្បាស់ជាងមុន</h3><p data-i18n data-km="Post មានគោលបំណងច្បាស់ និងអត្ថបទងាយអាន។" data-en="Posts have a clear purpose and easy-to-read copy.">Post មានគោលបំណងច្បាស់ និងអត្ថបទងាយអាន។</p></div></article>
+        <article><span>02</span><div><h3>ខ្មែរ + English</h3><p data-i18n data-km="ងាយទាក់ទងទាំងអតិថិជនខ្មែរ និងភ្ញៀវបរទេស។" data-en="Communicate with both local and international customers.">ងាយទាក់ទងទាំងអតិថិជនខ្មែរ និងភ្ញៀវបរទេស។</p></div></article>
+        <article><span>03</span><div><h3 data-i18n data-km="ចំណេញពេល" data-en="Save time">ចំណេញពេល</h3><p data-i18n data-km="មិនចាំបាច់ចាប់ផ្តើមសរសេរ Post ពីសូន្យរាល់ពេល។" data-en="You do not need to write every post from scratch.">មិនចាំបាច់ចាប់ផ្តើមសរសេរ Post ពីសូន្យរាល់ពេល។</p></div></article>
       </div>
     </div>
-  </section>
+    <img class="benefit-image" src="/services/local-business/benefit-salon.webp" alt="Cambodian salon owner focused on her customer while online content is ready" width="1536" height="1024" loading="lazy" />
+  </div></section>
 
-  <section class="what-section">
-    <div class="wrap text-block">
-      <span class="section-kicker" data-i18n data-km="តើសេវានេះធ្វើអ្វី?" data-en="What does this service do?">តើសេវានេះធ្វើអ្វី?</span>
-      <h2 data-i18n data-km="អ្នកមិនចាំបាច់គិតថាត្រូវសរសេរ Post អ្វីទៀតទេ" data-en="You no longer need to think about what to write">អ្នកមិនចាំបាច់គិតថាត្រូវសរសេរ Post អ្វីទៀតទេ</h2>
-      <p data-i18n data-km="ផ្ញើព័ត៌មានមូលដ្ឋានអំពីអាជីវកម្មរបស់អ្នកមកយើង។ Kroma Digital នឹងរៀបចំអត្ថបទសម្រាប់ Facebook និង Google ឱ្យសមនឹងហាងរបស់អ្នក ហើយធ្វើជាភាសាខ្មែរ និងអង់គ្លេស។ អ្នកគ្រាន់តែពិនិត្យ រួច Copy & Post។" data-en="Send us the basic information about your business. Kroma Digital prepares Facebook and Google content tailored to your shop in Khmer and English. You simply review it, then copy and post it.">ផ្ញើព័ត៌មានមូលដ្ឋានអំពីអាជីវកម្មរបស់អ្នកមកយើង។ Kroma Digital នឹងរៀបចំអត្ថបទសម្រាប់ Facebook និង Google ឱ្យសមនឹងហាងរបស់អ្នក ហើយធ្វើជាភាសាខ្មែរ និងអង់គ្លេស។ អ្នកគ្រាន់តែពិនិត្យ រួច Copy & Post។</p>
+  <section class="pack" id="starter-pack"><div class="wrap pack-grid">
+    <div class="pack-title"><p class="section-label">BUSINESS STARTER PACK</p><h2><span>$20</span> <small data-i18n data-km="បង់ម្តង" data-en="one-time">បង់ម្តង</small></h2><p data-i18n data-km="មាតិកាសំខាន់ៗសម្រាប់ឱ្យអាជីវកម្មរបស់អ្នកមើលទៅច្បាស់នៅលើ Facebook និង Google។" data-en="The essential content your business needs to look clear on Facebook and Google.">មាតិកាសំខាន់ៗសម្រាប់ឱ្យអាជីវកម្មរបស់អ្នកមើលទៅច្បាស់នៅលើ Facebook និង Google។</p><div class="pack-meta"><strong data-i18n data-km="ជាធម្មតា 48 ម៉ោង" data-en="Usually within 48 hours">ជាធម្មតា 48 ម៉ោង</strong><span data-i18n data-km="កែតម្រូវតិចតួច 1 ដង" data-en="1 light revision included">កែតម្រូវតិចតួច 1 ដង</span></div></div>
+    <div class="pack-content"><ul>
+      <li><b>01</b><span data-i18n data-km="Business Description + Facebook About + Google Business" data-en="Business description + Facebook About + Google Business description">Business Description + Facebook About + Google Business</span></li>
+      <li><b>08</b><span>Facebook Posts</span></li><li><b>02</b><span>Promotion Posts</span></li>
+      <li><b>10</b><span data-i18n data-km="គំរូឆ្លើយតប Review" data-en="Review reply templates">គំរូឆ្លើយតប Review</span></li>
+      <li><b>05</b><span data-i18n data-km="FAQ និងចម្លើយ" data-en="FAQs and answers">FAQ និងចម្លើយ</span></li>
+      <li><b>03</b><span data-i18n data-km="គំនិត Promotion" data-en="Promotion ideas">គំនិត Promotion</span></li>
+    </ul><div class="included" data-i18n data-km="ទាំងអស់មានជាភាសាខ្មែរ + English" data-en="Everything is provided in Khmer + English">ទាំងអស់មានជាភាសាខ្មែរ + English</div></div>
+  </div></section>
+
+  <section class="sample"><div class="wrap sample-box">
+    <div class="sample-mark"><strong>FREE</strong><span>1 FACEBOOK POST</span></div>
+    <div class="sample-copy"><p class="section-label" data-i18n data-km="សាកមើលមុនពេលទិញ" data-en="Try it before you buy">សាកមើលមុនពេលទិញ</p><h2 data-i18n data-km="ផ្ញើព័ត៌មាន 3 យ៉ាង។ យើងធ្វើ Post គំរូ 1 ឱ្យអ្នកមើល។" data-en="Send 3 details. We create 1 sample post for you.">ផ្ញើព័ត៌មាន 3 យ៉ាង។ យើងធ្វើ Post គំរូ 1 ឱ្យអ្នកមើល។</h2><div class="send-list"><span data-i18n data-km="ឈ្មោះអាជីវកម្ម" data-en="Business name">ឈ្មោះអាជីវកម្ម</span><span>Facebook Page</span><span data-i18n data-km="ប្រភេទអាជីវកម្ម" data-en="Business type">ប្រភេទអាជីវកម្ម</span></div><p class="no-purchase" data-i18n data-km="អ្នកអាចមើលគំរូបាន ដោយមិនចាំបាច់ទិញ។" data-en="No purchase is required to see the sample.">អ្នកអាចមើលគំរូបាន ដោយមិនចាំបាច់ទិញ។</p><a class="button sample-button" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="ផ្ញើសារតាម Messenger" data-en="Message us on Messenger">ផ្ញើសារតាម Messenger</a></div>
+  </div></section>
+
+  <section class="faq"><div class="wrap faq-grid">
+    <div><p class="section-label">FAQ</p><h2 data-i18n data-km="សំណួរខ្លីៗ មុនពេលចាប់ផ្តើម" data-en="Quick questions before you start">សំណួរខ្លីៗ មុនពេលចាប់ផ្តើម</h2></div>
+    <div class="questions">
+      <details open><summary data-i18n data-km="តើត្រូវចំណាយពេលប៉ុន្មាន?" data-en="How long does it take?">តើត្រូវចំណាយពេលប៉ុន្មាន?</summary><p data-i18n data-km="ជាធម្មតា យើងរៀបចំរួចក្នុង 48 ម៉ោង។" data-en="Usually within 48 hours.">ជាធម្មតា យើងរៀបចំរួចក្នុង 48 ម៉ោង។</p></details>
+      <details><summary data-i18n data-km="តើ Kroma Digital ថតរូបឱ្យទេ?" data-en="Does Kroma Digital take photos?">តើ Kroma Digital ថតរូបឱ្យទេ?</summary><p data-i18n data-km="ទេ។ យើងប្រើរូបថតរបស់អ្នក ហើយអាចណែនាំថាគួរថតរូបអ្វីខ្លះ។" data-en="No. We use your photos and can suggest what photos to take.">ទេ។ យើងប្រើរូបថតរបស់អ្នក ហើយអាចណែនាំថាគួរថតរូបអ្វីខ្លះ។</p></details>
+      <details><summary data-i18n data-km="តើខ្ញុំអាចសុំកែបានទេ?" data-en="Can I request changes?">តើខ្ញុំអាចសុំកែបានទេ?</summary><p data-i18n data-km="បាន។ Starter Pack រួមបញ្ចូលការកែតម្រូវតិចតួច 1 ដង។" data-en="Yes. One light revision is included.">បាន។ Starter Pack រួមបញ្ចូលការកែតម្រូវតិចតួច 1 ដង។</p></details>
+      <details><summary data-i18n data-km="តើត្រូវបង់ប្រចាំខែទេ?" data-en="Is it monthly?">តើត្រូវបង់ប្រចាំខែទេ?</summary><p data-i18n data-km="ទេ។ Starter Pack មានតម្លៃ $20 បង់តែម្តង។" data-en="No. The Starter Pack is a $20 one-time payment.">ទេ។ Starter Pack មានតម្លៃ $20 បង់តែម្តង។</p></details>
     </div>
-  </section>
+  </div></section>
 
-  <!-- 2. HOW IT WORKS: explain mainly with images -->
-  <section class="how-section" id="how">
-    <div class="wrap section-head">
-      <span class="section-kicker" data-i18n data-km="របៀបប្រើ" data-en="How it works">របៀបប្រើ</span>
-      <h2 data-i18n data-km="អ្នកធ្វើតែ 3 ជំហាន" data-en="Only 3 simple steps for you">អ្នកធ្វើតែ 3 ជំហាន</h2>
-    </div>
-
-    <div class="wrap flow-visual">
-      <article class="flow-card">
-        <div class="step-no">1</div>
-        <svg viewBox="0 0 360 240" role="img">
-          <rect x="80" y="20" width="200" height="205" rx="28" fill="#142e4d"/>
-          <rect x="96" y="42" width="168" height="142" rx="14" fill="#f6f9fc"/>
-          <circle cx="125" cy="76" r="16" fill="#1877f2"/>
-          <rect x="150" y="66" width="86" height="11" rx="6" fill="#d9e5f2"/>
-          <rect x="120" y="102" width="116" height="28" rx="14" fill="#dceeff"/>
-          <rect x="138" y="140" width="98" height="28" rx="14" fill="#e9f7eb"/>
-          <rect x="126" y="194" width="108" height="8" rx="4" fill="#8095aa"/>
-          <circle cx="305" cy="84" r="38" fill="#1877f2"/>
-          <path d="M286 83h38M305 64v38" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
-        </svg>
-        <h3 data-i18n data-km="ផ្ញើព័ត៌មានមកយើង" data-en="Send your business info">ផ្ញើព័ត៌មានមកយើង</h3>
-        <p data-i18n data-km="ឈ្មោះហាង • Facebook • Google Maps • សេវា/ផលិតផល" data-en="Name • Facebook • Google Maps • products/services">ឈ្មោះហាង • Facebook • Google Maps • សេវា/ផលិតផល</p>
-      </article>
-
-      <div class="flow-arrow">→</div>
-
-      <article class="flow-card">
-        <div class="step-no">2</div>
-        <svg viewBox="0 0 360 240" role="img">
-          <rect x="36" y="50" width="288" height="155" rx="18" fill="#17395f"/>
-          <rect x="54" y="67" width="252" height="117" rx="8" fill="#fff"/>
-          <rect x="74" y="87" width="118" height="12" rx="6" fill="#1877f2"/>
-          <rect x="74" y="112" width="198" height="8" rx="4" fill="#9eb0c3"/>
-          <rect x="74" y="129" width="175" height="8" rx="4" fill="#c2cfda"/>
-          <rect x="74" y="151" width="64" height="20" rx="10" fill="#e8f2ff"/>
-          <rect x="147" y="151" width="64" height="20" rx="10" fill="#e8f2ff"/>
-          <path d="M92 205h176l24 20H68z" fill="#0c2440"/>
-          <circle cx="303" cy="40" r="34" fill="#ffb21a"/>
-          <path d="M303 18v44M281 40h44" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
-        </svg>
-        <h3 data-i18n data-km="យើងរៀបចំមាតិកា" data-en="We create the content">យើងរៀបចំមាតិកា</h3>
-        <p data-i18n data-km="Facebook + Google • ខ្មែរ + English" data-en="Facebook + Google • Khmer + English">Facebook + Google • ខ្មែរ + English</p>
-      </article>
-
-      <div class="flow-arrow">→</div>
-
-      <article class="flow-card">
-        <div class="step-no">3</div>
-        <svg viewBox="0 0 360 240" role="img">
-          <rect x="84" y="18" width="192" height="208" rx="28" fill="#142e4d"/>
-          <rect x="99" y="39" width="162" height="151" rx="14" fill="#fff"/>
-          <rect x="114" y="56" width="132" height="62" rx="10" fill="#f4d59d"/>
-          <rect x="114" y="132" width="118" height="9" rx="5" fill="#17395f"/>
-          <rect x="114" y="151" width="132" height="7" rx="4" fill="#aab8c6"/>
-          <rect x="114" y="166" width="98" height="7" rx="4" fill="#c8d2dc"/>
-          <circle cx="289" cy="173" r="42" fill="#17a05e"/>
-          <path d="M267 174l15 15 28-33" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <h3 data-i18n data-km="Copy & Post" data-en="Copy & Post">Copy & Post</h3>
-        <p data-i18n data-km="អ្នកទទួលបានអត្ថបទត្រៀមប្រើ" data-en="You receive ready-to-use content">អ្នកទទួលបានអត្ថបទត្រៀមប្រើ</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- 3. WHAT CHANGES FOR THE CUSTOMER: words + images -->
-  <section class="results-section">
-    <div class="wrap section-head">
-      <span class="section-kicker" data-i18n data-km="បន្ទាប់ពីប្រើសេវា" data-en="What changes for your business">បន្ទាប់ពីប្រើសេវា</span>
-      <h2 data-i18n data-km="អាជីវកម្មរបស់អ្នកងាយយល់ និងមើលទៅមានវិជ្ជាជីវៈជាងមុន" data-en="Your business becomes easier to understand and more professional online">អាជីវកម្មរបស់អ្នកងាយយល់ និងមើលទៅមានវិជ្ជាជីវៈជាងមុន</h2>
-    </div>
-
-    <div class="wrap result-list">
-      <article class="result-card">
-        <div class="result-art">
-          <svg viewBox="0 0 520 320" role="img">
-            <rect x="28" y="38" width="190" height="242" rx="24" fill="#eef2f6"/>
-            <rect x="46" y="58" width="154" height="30" rx="10" fill="#9caab8"/>
-            <rect x="48" y="112" width="150" height="84" rx="12" fill="#d6dde5"/>
-            <rect x="52" y="218" width="110" height="9" rx="5" fill="#aab5c0"/>
-            <rect x="52" y="237" width="130" height="7" rx="4" fill="#ccd4dc"/>
-            <path d="M235 157h48" stroke="#ffb21a" stroke-width="10" stroke-linecap="round"/>
-            <path d="M272 139l22 18-22 18" stroke="#ffb21a" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="302" y="28" width="190" height="264" rx="24" fill="#fff" stroke="#dce6ef" stroke-width="3"/>
-            <rect x="320" y="48" width="154" height="34" rx="10" fill="#1877f2"/>
-            <rect x="320" y="101" width="154" height="96" rx="12" fill="#f2cf91"/>
-            <circle cx="365" cy="144" r="27" fill="#fff0ce"/>
-            <rect x="329" y="218" width="128" height="10" rx="5" fill="#17395f"/>
-            <rect x="329" y="239" width="145" height="8" rx="4" fill="#8fa4ba"/>
-            <rect x="329" y="257" width="112" height="7" rx="4" fill="#c1ceda"/>
-          </svg>
-        </div>
-        <div class="result-copy">
-          <span class="result-no">01</span>
-          <h3 data-i18n data-km="Facebook របស់អ្នកមើលទៅច្បាស់ និងស្អាតជាងមុន" data-en="Your Facebook page looks clearer and more professional">Facebook របស់អ្នកមើលទៅច្បាស់ និងស្អាតជាងមុន</h3>
-          <p data-i18n data-km="Post មានគោលបំណងច្បាស់ អត្ថបទងាយយល់ និងអាចបង្ហោះបានជាប្រចាំ។" data-en="Posts have a clear purpose, easy-to-understand copy and are ready for regular posting.">Post មានគោលបំណងច្បាស់ អត្ថបទងាយយល់ និងអាចបង្ហោះបានជាប្រចាំ។</p>
-        </div>
-      </article>
-
-      <article class="result-card reverse">
-        <div class="result-art">
-          <svg viewBox="0 0 520 320" role="img">
-            <circle cx="170" cy="160" r="76" fill="#eaf4ff"/>
-            <circle cx="350" cy="160" r="76" fill="#fff4dc"/>
-            <circle cx="170" cy="140" r="28" fill="#d69a67"/>
-            <path d="M125 224c12-53 78-53 90 0" fill="#1877f2"/>
-            <circle cx="350" cy="140" r="28" fill="#e0ae7c"/>
-            <path d="M305 224c12-53 78-53 90 0" fill="#f04438"/>
-            <rect x="104" y="52" width="132" height="48" rx="24" fill="#1877f2"/>
-            <text x="170" y="82" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ខ្មែរ</text>
-            <rect x="284" y="52" width="132" height="48" rx="24" fill="#ffb21a"/>
-            <text x="350" y="82" text-anchor="middle" font-size="20" font-weight="800" fill="#17395f">English</text>
-            <path d="M241 159h38" stroke="#17a05e" stroke-width="8" stroke-linecap="round"/>
-            <path d="M260 140v38" stroke="#17a05e" stroke-width="8" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="result-copy">
-          <span class="result-no">02</span>
-          <h3 data-i18n data-km="អតិថិជនខ្មែរ និងភ្ញៀវបរទេសអាចយល់អាជីវកម្មរបស់អ្នក" data-en="Local and international customers can understand your business">អតិថិជនខ្មែរ និងភ្ញៀវបរទេសអាចយល់អាជីវកម្មរបស់អ្នក</h3>
-          <p data-i18n data-km="មាតិកាត្រូវបានរៀបចំជាភាសាខ្មែរ និងអង់គ្លេស ដូច្នេះអ្នកអាចនិយាយទៅកាន់អតិថិជនទាំងពីរក្រុមបាន។" data-en="Content is prepared in Khmer and English so you can communicate with both local and international customers.">មាតិកាត្រូវបានរៀបចំជាភាសាខ្មែរ និងអង់គ្លេស ដូច្នេះអ្នកអាចនិយាយទៅកាន់អតិថិជនទាំងពីរក្រុមបាន។</p>
-        </div>
-      </article>
-
-      <article class="result-card">
-        <div class="result-art">
-          <svg viewBox="0 0 520 320" role="img">
-            <circle cx="146" cy="152" r="80" fill="#eef6ff"/>
-            <circle cx="146" cy="132" r="29" fill="#d9a070"/>
-            <path d="M94 220c12-62 92-62 104 0" fill="#0b67ce"/>
-            <rect x="278" y="54" width="196" height="210" rx="24" fill="#fff" stroke="#dce6ef" stroke-width="3"/>
-            <rect x="303" y="78" width="144" height="15" rx="8" fill="#17395f"/>
-            <rect x="303" y="112" width="120" height="11" rx="6" fill="#9cafc2"/>
-            <rect x="303" y="142" width="144" height="44" rx="14" fill="#e9f7ed"/>
-            <path d="M323 164l12 12 22-26" stroke="#17a05e" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="370" y="156" width="56" height="10" rx="5" fill="#17a05e"/>
-            <rect x="303" y="205" width="144" height="36" rx="18" fill="#1877f2"/>
-            <text x="375" y="229" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">READY</text>
-            <circle cx="227" cy="91" r="44" fill="#ffb21a"/>
-            <path d="M227 66v28l20 13" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="result-copy">
-          <span class="result-no">03</span>
-          <h3 data-i18n data-km="អ្នកចំណាយពេលតិចលើការសរសេរ Post" data-en="You spend less time writing posts">អ្នកចំណាយពេលតិចលើការសរសេរ Post</h3>
-          <p data-i18n data-km="អ្នកមិនចាំបាច់ចាប់ផ្តើមសរសេរពីសូន្យទេ។ មាតិកាត្រូវបានរៀបចំជាមុន ហើយអ្នកអាចផ្តោតលើអតិថិជន និងការងាររបស់អ្នក។" data-en="You do not need to start writing from zero. Content is prepared in advance so you can focus on customers and your business.">អ្នកមិនចាំបាច់ចាប់ផ្តើមសរសេរពីសូន្យទេ។ មាតិកាត្រូវបានរៀបចំជាមុន ហើយអ្នកអាចផ្តោតលើអតិថិជន និងការងាររបស់អ្នក។</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="pack-section" id="pack">
-    <div class="wrap pack-grid">
-      <div>
-        <span class="section-kicker">Business Starter Pack</span>
-        <h2 data-i18n data-km="អ្វីដែលអ្នកទទួលបានក្នុងតម្លៃ $20" data-en="What you receive for $20">អ្វីដែលអ្នកទទួលបានក្នុងតម្លៃ $20</h2>
-        <p class="pack-intro" data-i18n data-km="បង់ម្តង។ គ្មានកិច្ចសន្យាប្រចាំខែ។ ជាទូទៅរៀបចំរួចក្នុង 48 ម៉ោង។" data-en="One-time payment. No monthly contract. Usually prepared within 48 hours.">បង់ម្តង។ គ្មានកិច្ចសន្យាប្រចាំខែ។ ជាទូទៅរៀបចំរួចក្នុង 48 ម៉ោង។</p>
-        <div class="deliverables">
-          <div><b>8</b><span>Facebook Posts</span></div>
-          <div><b>2</b><span>Promotion Posts</span></div>
-          <div><b>10</b><span>Review Replies</span></div>
-          <div><b>5</b><span>FAQ Answers</span></div>
-          <div><b>3</b><span>Promotion Ideas</span></div>
-          <div><b>✓</b><span>Google Business Text</span></div>
-        </div>
-      </div>
-      <aside class="pack-card">
-        <div class="pack-price"><strong>$20</strong><span data-i18n data-km="បង់ម្តង" data-en="one-time">បង់ម្តង</span></div>
-        <p data-i18n data-km="មុនពេលទិញ អ្នកអាចសាក Post គំរូ 1 ដោយឥតគិតថ្លៃ។" data-en="Before you buy, you can try one sample post for free.">មុនពេលទិញ អ្នកអាចសាក Post គំរូ 1 ដោយឥតគិតថ្លៃ។</p>
-        <a class="btn primary wide" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="💬 សុំ Post គំរូឥតគិតថ្លៃ" data-en="💬 Get a free sample post">💬 សុំ Post គំរូឥតគិតថ្លៃ</a>
-      </aside>
-    </div>
-  </section>
-
-  <section class="final-cta">
-    <div class="wrap final-row">
-      <div>
-        <h2 data-i18n data-km="ចាប់ផ្តើមដោយឥតគិតថ្លៃ" data-en="Start for free">ចាប់ផ្តើមដោយឥតគិតថ្លៃ</h2>
-        <p data-i18n data-km="ផ្ញើ Facebook Page របស់អ្នកមកយើង។ យើងនឹងធ្វើ Post គំរូ 1 ឱ្យមើលជាមុន។" data-en="Send us your Facebook page. We will prepare one sample post for you first.">ផ្ញើ Facebook Page របស់អ្នកមកយើង។ យើងនឹងធ្វើ Post គំរូ 1 ឱ្យមើលជាមុន។</p>
-      </div>
-      <a class="btn primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="Message Kroma Digital" data-en="Message Kroma Digital">Message Kroma Digital</a>
-    </div>
-  </section>
+  <section class="final-cta"><div class="wrap final-inner"><div><p class="section-label" data-i18n data-km="ចាប់ផ្តើមដោយឥតគិតថ្លៃ" data-en="Start for free">ចាប់ផ្តើមដោយឥតគិតថ្លៃ</p><h2 data-i18n data-km="សាក Post 1 មុន។ បើអ្នកចូលចិត្ត ទើបជ្រើស Starter Pack។" data-en="Try 1 post first. Choose the Starter Pack only if you like it.">សាក Post 1 មុន។ បើអ្នកចូលចិត្ត ទើបជ្រើស Starter Pack។</h2></div><a class="button primary" href="https://m.me/kromadigitalapps" target="_blank" rel="noreferrer" data-i18n data-km="សុំ Post ឥតគិតថ្លៃ 1" data-en="Get 1 FREE sample post">សុំ Post ឥតគិតថ្លៃ 1</a></div></section>
 
   <style>
-    .hero{padding:76px 0;background:linear-gradient(135deg,#041426 0%,#0a3159 100%);color:#fff;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:46px;align-items:center}.hero-copy h1{font-size:clamp(2.65rem,5.4vw,4.65rem);line-height:1.08;letter-spacing:-.045em;margin:14px 0 20px}.hero-lead{font-size:1.15rem;line-height:1.85;color:rgba(255,255,255,.82);max-width:690px}.eyebrow,.section-kicker{display:inline-block;color:#70b5ff;font-weight:900;font-size:.82rem;letter-spacing:.05em}.hero-points{display:flex;flex-wrap:wrap;gap:10px 18px;margin:24px 0}.hero-points div{display:flex;gap:8px;align-items:center;font-weight:750}.tick{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#17a05e;color:#fff;font-size:.8rem}.offer-row{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}.price-box,.free-box{display:flex;align-items:center;gap:10px;border-radius:16px;padding:12px 16px}.price-box{background:#fff;color:#0c2440}.price-box strong{font-size:2.15rem;line-height:1;color:#0b67ce}.price-box span{font-weight:750}.free-box{background:#e9fff0;color:#075e2a}.free-box b{background:#17a05e;color:#fff;border-radius:8px;padding:5px 8px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;font-weight:850}.btn.primary{background:#1877f2;color:#fff}.btn.primary:hover{background:#1268d7}.btn.secondary{border:1px solid rgba(255,255,255,.45);color:#fff}.btn.wide{width:100%}.hero-visual svg{width:100%;height:auto;display:block}.what-section{padding:62px 0;background:#fff}.text-block{max-width:930px;text-align:center}.text-block .section-kicker,.section-head .section-kicker,.pack-section .section-kicker{color:#0b67ce}.text-block h2,.section-head h2,.pack-section h2,.final-cta h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.18;letter-spacing:-.035em;margin:10px 0 16px}.text-block p{font-size:1.08rem;line-height:1.9;color:var(--muted);max-width:850px;margin:0 auto}.how-section{padding:74px 0;background:#f4f8fd}.section-head{max-width:850px;margin-bottom:34px}.flow-visual{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:14px}.flow-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;text-align:center;box-shadow:0 14px 32px rgba(14,43,72,.06);position:relative}.flow-card svg{width:100%;height:auto;display:block}.step-no{position:absolute;top:16px;left:16px;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#0b67ce;color:#fff;font-weight:900;z-index:2}.flow-card h3{font-size:1.2rem;margin:8px 0 4px}.flow-card p{margin:0;color:var(--muted);font-size:.9rem}.flow-arrow{font-size:2.4rem;color:#0b67ce;font-weight:900}.results-section{padding:78px 0;background:#fff}.result-list{display:grid;gap:24px}.result-card{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;align-items:center;border:1px solid var(--line);border-radius:26px;padding:28px;background:#fff;box-shadow:0 14px 34px rgba(14,43,72,.05)}.result-card.reverse .result-art{order:2}.result-card.reverse .result-copy{order:1}.result-art svg{width:100%;height:auto;display:block}.result-no{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:#e8f2ff;color:#0b67ce;font-weight:900}.result-copy h3{font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.35;margin:13px 0 10px}.result-copy p{font-size:1.03rem;color:var(--muted);line-height:1.8;margin:0}.pack-section{padding:76px 0;background:#f4f8fd}.pack-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.pack-intro{color:var(--muted);font-size:1.04rem}.deliverables{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.deliverables div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column}.deliverables b{font-size:1.8rem;color:#0b67ce;line-height:1}.deliverables span{font-size:.88rem;color:var(--muted);margin-top:7px}.pack-card{background:#071f3b;color:#fff;border-radius:24px;padding:30px;box-shadow:0 18px 40px rgba(0,0,0,.16)}.pack-price{display:flex;align-items:end;gap:10px}.pack-price strong{font-size:4rem;line-height:1}.pack-price span{padding-bottom:8px;color:rgba(255,255,255,.66)}.pack-card p{color:rgba(255,255,255,.75);line-height:1.75}.final-cta{padding:52px 0;background:#061a31;color:#fff}.final-row{display:flex;align-items:center;justify-content:space-between;gap:30px}.final-cta h2{margin:0 0 8px}.final-cta p{margin:0;color:rgba(255,255,255,.72);max-width:720px}
-    @media(max-width:900px){.hero-grid,.pack-grid{grid-template-columns:1fr}.hero-visual{max-width:620px;margin:auto}.flow-visual{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);text-align:center}.result-card,.result-card.reverse{grid-template-columns:1fr}.result-card.reverse .result-art,.result-card.reverse .result-copy{order:initial}.deliverables{grid-template-columns:1fr 1fr}}
-    @media(max-width:640px){.hero{padding:54px 0}.hero-copy h1{font-size:2.65rem}.hero-lead{font-size:1rem}.what-section,.how-section,.results-section,.pack-section{padding:56px 0}.result-card{padding:18px;gap:16px}.deliverables{grid-template-columns:1fr 1fr}.final-row{align-items:flex-start;flex-direction:column}.offer-row{flex-direction:column}.price-box,.free-box{width:100%;justify-content:center}.actions .btn{width:100%}}
+    .hero{background:#061a31;color:#fff;padding:72px 0 84px}.hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:54px;align-items:center}.eyebrow,.section-label{margin:0;color:#438ff0;font-size:.79rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(2.5rem,5.2vw,4.6rem);line-height:1.08;letter-spacing:-.045em;margin:15px 0 20px}.lead{color:#cbd9e8;font-size:1.08rem;line-height:1.85}.hero-offer{display:flex;gap:12px;margin:26px 0 8px}.hero-offer>div{display:flex;align-items:center;gap:10px;background:#fff;color:#0c2440;border-radius:12px;padding:10px 14px}.hero-offer strong{font-size:1.55rem;color:#0b67ce}.hero-offer .free{background:#e8f8ef}.hero-offer .free strong{font-size:.92rem;color:#087d43}.hero-offer span{font-weight:800;font-size:.85rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border-radius:10px;font-weight:850;transition:.2s}.button:hover{transform:translateY(-2px)}.primary{background:#1877f2;color:#fff}.secondary{border:1px solid #637d98;color:#fff}.hero-image{margin:0;position:relative}.hero-image img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.35)}.hero-image figcaption{position:absolute;left:18px;right:18px;bottom:18px;display:flex;gap:7px}.hero-image figcaption span{background:rgba(6,26,49,.9);color:#fff;border:1px solid rgba(255,255,255,.25);padding:7px 11px;border-radius:999px;font-size:.75rem;font-weight:800}
+    .what{padding:72px 0;border-bottom:1px solid var(--line)}.what-grid{display:grid;grid-template-columns:.34fr 1fr;gap:44px}.what h2,.section-heading h2,.benefits h2,.faq h2,.final-cta h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.22;letter-spacing:-.035em;margin:0 0 18px}.what p:not(.section-label){color:var(--muted);font-size:1.08rem;margin:0}.process{padding:78px 0;background:#f4f8fd}.section-heading{text-align:center;margin:0 auto 30px}.section-heading .section-label{margin-bottom:8px}.process-image{display:block;width:100%;border-radius:22px;box-shadow:0 18px 50px rgba(12,36,64,.13)}.steps{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.steps li{display:flex;gap:13px}.steps li>span{flex:0 0 36px;height:36px;display:grid;place-items:center;background:#1877f2;color:#fff;border-radius:50%;font-weight:900}.steps h3{margin:2px 0 4px;font-size:1.08rem}.steps p{margin:0;color:var(--muted);font-size:.88rem}
+    .benefits{padding:82px 0}.benefits-grid{display:grid;grid-template-columns:1fr .88fr;gap:60px;align-items:center}.benefit-copy>.section-label{margin-bottom:10px}.benefit-list{display:grid;margin-top:28px}.benefit-list article{display:grid;grid-template-columns:46px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line)}.benefit-list article>span{color:#1877f2;font-size:.78rem;font-weight:900}.benefit-list h3{margin:0 0 5px;font-size:1.1rem}.benefit-list p{margin:0;color:var(--muted)}.benefit-image{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:22px;box-shadow:18px 18px 0 #e8f2ff}
+    .pack{padding:82px 0;background:#071f3b;color:#fff}.pack-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.pack-title h2{margin:8px 0 14px}.pack-title h2 span{font-size:clamp(4rem,9vw,7.5rem);line-height:1}.pack-title h2 small{font-size:1rem;color:#aac0d8}.pack-title>p:not(.section-label){color:#c0d0e1}.pack-meta{margin-top:25px;display:flex;flex-direction:column;gap:5px;color:#c0d0e1}.pack-meta strong{color:#fff}.pack-content ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}.pack-content li{display:grid;grid-template-columns:44px 1fr;gap:11px;border-top:1px solid #294664;padding:17px 0}.pack-content li b{color:#64aaff}.pack-content li span{font-weight:700}.included{margin-top:22px;padding:15px 18px;border-radius:10px;background:#e9fff1;color:#086b39;font-weight:900;text-align:center}
+    .sample{padding:84px 0;background:#edf5ff}.sample-box{background:#fff;border-radius:24px;display:grid;grid-template-columns:.55fr 1.45fr;overflow:hidden;box-shadow:0 20px 60px rgba(9,48,88,.12)}.sample-mark{background:#1877f2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:42px}.sample-mark strong{font-size:clamp(4rem,10vw,8rem);line-height:.9}.sample-mark span{font-weight:900;letter-spacing:.08em;margin-top:16px}.sample-copy{padding:50px}.sample-copy h2{font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.3;margin:9px 0 22px}.send-list{display:flex;gap:9px;flex-wrap:wrap}.send-list span{background:#eff4fa;padding:8px 12px;border-radius:7px;font-weight:750;font-size:.86rem}.no-purchase{color:var(--muted);font-size:.92rem}.sample-button{background:#071f3b;color:#fff;margin-top:8px}
+    .faq{padding:82px 0}.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.faq .section-label{margin-bottom:10px}.questions details{border-top:1px solid var(--line);padding:18px 0}.questions details:last-child{border-bottom:1px solid var(--line)}.questions summary{font-weight:850;cursor:pointer;list-style:none;display:flex;justify-content:space-between}.questions summary:after{content:'+';color:#1877f2;font-size:1.4rem}.questions details[open] summary:after{content:'−'}.questions p{margin:10px 0 0;color:var(--muted)}.final-cta{padding:65px 0;background:#061a31;color:#fff}.final-inner{display:flex;align-items:center;justify-content:space-between;gap:45px}.final-inner h2{max-width:800px;margin:8px 0 0;font-size:clamp(1.8rem,4vw,3rem)}.final-inner .button{flex:0 0 auto}
+    @media(max-width:900px){.hero-grid,.benefits-grid,.pack-grid,.sample-box,.faq-grid{grid-template-columns:1fr}.hero-grid{gap:34px}.what-grid{grid-template-columns:1fr;gap:12px}.benefit-image{aspect-ratio:16/10;box-shadow:10px 10px 0 #e8f2ff}.pack-grid,.faq-grid{gap:35px}.sample-mark{padding:28px}.sample-mark strong{font-size:4rem}.sample-copy{padding:34px}.final-inner{align-items:flex-start;flex-direction:column}.final-inner .button{width:100%}}
+    @media(max-width:650px){.hero{padding:48px 0 58px}.hero h1{font-size:2.5rem}.hero-image{margin:0 -14px}.hero-image img{border-radius:0}.hero-image figcaption{left:10px;right:10px;bottom:10px}.hero-offer{display:grid;grid-template-columns:1fr 1fr}.hero-offer>div{padding:10px}.actions{display:grid}.button{width:100%}.what,.process,.benefits,.pack,.faq{padding:58px 0}.process-image{display:none}.steps{grid-template-columns:1fr;gap:15px}.steps li{position:relative;display:grid;grid-template-columns:36px 1fr;background:#fff;padding:170px 14px 16px;border-radius:14px;overflow:hidden}.steps li:before{content:'';position:absolute;inset:0 0 auto;height:154px;background-image:url('/services/local-business/how-it-works.webp');background-size:300% auto;background-repeat:no-repeat}.steps li:nth-child(1):before{background-position:left top}.steps li:nth-child(2):before{background-position:center top}.steps li:nth-child(3):before{background-position:right top}.pack-content ul{grid-template-columns:1fr}.sample{background:#fff;padding:0}.sample-box{width:100%;border-radius:0;box-shadow:none}.sample-copy{padding:32px 20px}.sample-mark{padding:26px 20px}.benefit-image{aspect-ratio:4/3}.final-cta{padding:54px 0}}
   </style>
 </SiteLayout>
