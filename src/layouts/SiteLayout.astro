@@ -24,21 +24,5 @@ const { title, description = 'Kroma Digital builds practical Android apps and di
 <header><div class="wrap nav"><a class="brand" href="/"><img src="/kroma-logo.webp" alt="Kroma Digital logo"/><span>Kroma Digital</span></a><nav class="links"><a href="/services/local-business" data-i18n data-km="សេវាសម្រាប់អាជីវកម្ម" data-en="Local Business">សេវាសម្រាប់អាជីវកម្ម</a><a href="/about" data-i18n data-km="អំពីយើង" data-en="About">អំពីយើង</a><a href="/apps" data-i18n data-km="កម្មវិធី" data-en="Apps">កម្មវិធី</a><a href="/blog" data-i18n data-km="ប្លុក" data-en="Blog">ប្លុក</a><a href="/contact" data-i18n data-km="ទំនាក់ទំនង" data-en="Contact">ទំនាក់ទំនង</a><a class="facebook" href="https://www.facebook.com/kromadigitalapps" target="_blank" rel="noreferrer">Facebook</a></nav><div class="lang-switch" aria-label="Language"><button type="button" data-lang="km" class="active">ខ្មែរ</button><button type="button" data-lang="en">EN</button></div></div></header>
 <main><slot /></main>
 <footer><div class="wrap"><div class="footer-grid"><div><div class="footer-brand"><img src="/kroma-logo.webp" alt="Kroma Digital"/><span>Kroma Digital</span></div><p data-i18n data-km="កម្មវិធី Android ឧបករណ៍ឌីជីថល និងសេវាមាតិកាសម្រាប់អាជីវកម្មនៅកម្ពុជា។" data-en="Simple Android apps, digital tools and content support for Cambodian businesses.">កម្មវិធី Android ឧបករណ៍ឌីជីថល និងសេវាមាតិកាសម្រាប់អាជីវកម្មនៅកម្ពុជា។</p></div><div><h4 data-i18n data-km="ក្រុមហ៊ុន" data-en="Company">ក្រុមហ៊ុន</h4><ul><li><a href="/services/local-business" data-i18n data-km="សេវាសម្រាប់អាជីវកម្ម" data-en="Local Business Services">សេវាសម្រាប់អាជីវកម្ម</a></li><li><a href="/about" data-i18n data-km="អំពីយើង" data-en="About">អំពីយើង</a></li><li><a href="/apps" data-i18n data-km="កម្មវិធី" data-en="Apps">កម្មវិធី</a></li><li><a href="/blog" data-i18n data-km="ប្លុក" data-en="Blog">ប្លុក</a></li><li><a href="/contact" data-i18n data-km="ទំនាក់ទំនង" data-en="Contact">ទំនាក់ទំនង</a></li></ul></div><div><h4 data-i18n data-km="ច្បាប់ និងឯកជនភាព" data-en="Legal">ច្បាប់ និងឯកជនភាព</h4><ul><li><a href="/privacy" data-i18n data-km="គោលការណ៍ឯកជនភាព" data-en="Privacy Policy">គោលការណ៍ឯកជនភាព</a></li><li><a href="/terms" data-i18n data-km="លក្ខខណ្ឌប្រើប្រាស់" data-en="Terms">លក្ខខណ្ឌប្រើប្រាស់</a></li></ul></div></div><div class="copyright">© {new Date().getFullYear()} Kroma Digital. <span data-i18n data-km="បង្កើតសម្រាប់កម្ពុជា។" data-en="Built for Cambodia.">បង្កើតសម្រាប់កម្ពុជា។</span></div></div></footer>
-<script is:inline>
-  (() => {
-    const stored = localStorage.getItem('kroma-lang');
-    const lang = stored === 'en' ? 'en' : 'km';
-    const apply = (next) => {
-      document.documentElement.lang = next;
-      document.querySelectorAll('[data-i18n]').forEach((el) => {
-        const value = el.getAttribute(next === 'km' ? 'data-km' : 'data-en');
-        if (value !== null) el.textContent = value;
-      });
-      document.querySelectorAll('[data-lang]').forEach((btn) => btn.classList.toggle('active', btn.getAttribute('data-lang') === next));
-      localStorage.setItem('kroma-lang', next);
-    };
-    apply(lang);
-    document.querySelectorAll('[data-lang]').forEach((btn) => btn.addEventListener('click', () => apply(btn.getAttribute('data-lang'))));
-  })();
-</script>
+<script is:inline src="/i18n.js"></script>
 </body></html>
